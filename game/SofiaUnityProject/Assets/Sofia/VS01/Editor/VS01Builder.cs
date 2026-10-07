@@ -35,11 +35,11 @@ namespace Sofia.VS01.Editor
             stone.SetTexture("_BaseMap", stoneTexture); stone.SetTextureScale("_BaseMap", Vector2.one); EditorUtility.SetDirty(stone);
             var foreground = Material("Foreground", new Color(.43f, .52f, .61f));
             foreground.SetTexture("_BaseMap", stoneTexture); foreground.SetTextureScale("_BaseMap", Vector2.one); EditorUtility.SetDirty(foreground);
-            Backdrop("Awakening_Distance_A", -15, "BG_Awakening");
-            Backdrop("Awakening_Distance_B", 35, "BG_Awakening");
-            Backdrop("FirstSteps_Distance", 85, "BG_Awakening");
-            Backdrop("Hele_Chamber", 135, "BG_HeleChamber");
-            Backdrop("Arch_Passage", 185, "BG_Awakening");
+            Backdrop("Awakening_Distance", 0, "BG_ReferenceAwakening");
+            Backdrop("FirstSteps_Distance_A", 45, "BG_ReferenceFirstSteps");
+            Backdrop("FirstSteps_Distance_B", 90, "BG_ReferenceFirstSteps");
+            Backdrop("Hele_Chamber", 135, "BG_ReferenceHele");
+            Backdrop("Follow_Distance", 180, "BG_ReferenceFollow");
             // Playable plane: small step, stone, one short gap, three changes of height.
             Block("Awakening_CircularPlatform", new Vector3(2, -1.1f, 0), new Vector3(24, 2.2f, 3), true);
             Block("BrokenRim", new Vector3(-9.5f, -.7f, -1f), new Vector3(1f, .7f, 2), false, distant);
@@ -79,6 +79,7 @@ namespace Sofia.VS01.Editor
             var cameraObject = new GameObject("Main Camera"); cameraObject.tag = "MainCamera";
             var camera = cameraObject.AddComponent<Camera>(); camera.orthographic = true; camera.orthographicSize = 6.5f;
             camera.backgroundColor = new Color(.69f, .74f, .77f); camera.clearFlags = CameraClearFlags.SolidColor;
+            ForegroundFrame(cameraObject.transform);
             cameraObject.AddComponent<AudioListener>();
             var brain = cameraObject.AddComponent<CinemachineBrain>(); brain.UpdateMethod = CinemachineBrain.UpdateMethods.LateUpdate;
             var rig = new GameObject("CM_VS01").AddComponent<CinemachineCamera>(); rig.transform.position = new Vector3(0, 2, -30);
@@ -114,12 +115,12 @@ namespace Sofia.VS01.Editor
                 importer.textureType = TextureImporterType.Default; importer.alphaIsTransparency = true;
                 importer.mipmapEnabled = false; importer.maxTextureSize = 2048; importer.SaveAndReimport();
             }
-            foreach (string name in new[] { "SPR_Father", "SPR_Father_Profile", "SPR_Hele", "SPR_StoneWalkway" })
+            foreach (string name in new[] { "SPR_Father", "SPR_Father_Profile", "SPR_Hele", "SPR_StoneWalkway", "SPR_IvyBridge", "SPR_ForegroundIvy" })
             {
                 string path = AssetsRoot + "/Art/" + name + ".png";
                 var importer = AssetImporter.GetAtPath(path) as TextureImporter;
                 if (importer == null) throw new FileNotFoundException("Missing painted VS01 sprite", path);
-                float ppu = name == "SPR_Father_Profile" ? 650 : name == "SPR_Father" ? 768 : name == "SPR_StoneWalkway" ? 198.3f : 1600;
+                float ppu = name == "SPR_Father_Profile" ? 650 : name == "SPR_Father" ? 768 : name == "SPR_StoneWalkway" ? 198.3f : name == "SPR_IvyBridge" ? 120 : name == "SPR_ForegroundIvy" ? 100 : 1600;
                 if (importer.textureType == TextureImporterType.Sprite && Mathf.Approximately(importer.spritePixelsPerUnit, ppu)) continue;
                 importer.textureType = TextureImporterType.Sprite; importer.spriteImportMode = SpriteImportMode.Single;
                 importer.spritePixelsPerUnit = ppu; importer.spritePivot = name == "SPR_Father_Profile" ? new Vector2(.5f, .02f) : name == "SPR_Father" ? new Vector2(.5f, .04f) : new Vector2(.5f, .5f);
@@ -134,7 +135,19 @@ namespace Sofia.VS01.Editor
             if (!mat) { mat = new Material(Shader.Find("SOFIA/SoftBackdrop")); AssetDatabase.CreateAsset(mat, matPath); }
             mat.SetTexture("_BaseMap", AssetDatabase.LoadAssetAtPath<Texture2D>(AssetsRoot + "/Art/" + imageName + ".png"));
             mat.SetColor("_BaseColor", Color.white); EditorUtility.SetDirty(mat);
-            Primitive(name, PrimitiveType.Quad, new Vector3(x, 3, 20), new Vector3(54, 22, 1), mat, environment);
+            Primitive(name, PrimitiveType.Quad, new Vector3(x, 3, 20), new Vector3(50, 28, 1), mat, environment);
+        }
+        static void ForegroundFrame(Transform camera)
+        {
+            var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AssetsRoot + "/Art/SPR_ForegroundIvy.png");
+            if (!sprite) return;
+            var renderer = new GameObject("Near_Ivy_CameraFrame").AddComponent<SpriteRenderer>();
+            renderer.transform.SetParent(camera, false);
+            renderer.transform.localPosition = new Vector3(0, 0, 5);
+            renderer.transform.localScale = new Vector3(30f / (sprite.rect.width / sprite.pixelsPerUnit), 17f / (sprite.rect.height / sprite.pixelsPerUnit), 1);
+            renderer.sprite = sprite;
+            renderer.sortingOrder = 100;
+            renderer.color = new Color(1, 1, 1, .65f);
         }
         static void SaveAsset(Object obj, string path)
         { if (!AssetDatabase.LoadAssetAtPath<Object>(path)) AssetDatabase.CreateAsset(obj, path); else Object.DestroyImmediate(obj); }
@@ -167,20 +180,24 @@ namespace Sofia.VS01.Editor
             string path = AssetsRoot + "/Meshes/Block_" + name + ".asset"; SaveAsset(mesh, path);
             go.AddComponent<MeshFilter>().sharedMesh = AssetDatabase.LoadAssetAtPath<Mesh>(path);
             var renderer = go.AddComponent<MeshRenderer>(); renderer.sharedMaterial = mat ? mat : stone;
-            if (solid && scale.x >= 20f)
+            if (name == "BrokenRim" || name == "EndRim_90s") renderer.enabled = false;
+            if (solid)
             {
                 renderer.enabled = false;
-                var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AssetsRoot + "/Art/SPR_StoneWalkway.png");
-                int count = Mathf.CeilToInt(scale.x / 12f);
+                int count = Mathf.Max(1, Mathf.CeilToInt(scale.x / 16f));
                 float step = scale.x / count;
                 for (int i = 0; i < count; i++)
                 {
+                    bool arch = name == "Awakening_CircularPlatform" || name == "FirstSteps_Colonnade" || name.StartsWith("ArcStep_") || (name == "HeleToSafeEnd" && i % 3 == 1);
+                    var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AssetsRoot + (arch ? "/Art/SPR_IvyBridge.png" : "/Art/SPR_StoneWalkway.png"));
                     var layer = new GameObject("PaintedStone_" + i).AddComponent<SpriteRenderer>();
                     layer.transform.SetParent(go.transform, false);
                     layer.sprite = sprite;
                     layer.sortingOrder = 2;
-                    layer.transform.localPosition = new Vector3(-scale.x / 2f + step * (i + .5f), scale.y / 2f - .59f, -.1f);
-                    layer.transform.localScale = new Vector3((step + .9f) / (sprite.rect.width / sprite.pixelsPerUnit), 1, 1);
+                    float verticalScale = scale.x < 2f ? .3f : scale.x < 6f ? .48f : arch ? .72f : 1f;
+                    float topInset = (arch ? 1.61f / .72f : .59f) * verticalScale;
+                    layer.transform.localPosition = new Vector3(-scale.x / 2f + step * (i + .5f), scale.y / 2f - topInset + (arch ? .16f : 0), -.1f);
+                    layer.transform.localScale = new Vector3((step + (scale.x < 6f ? .2f : .9f)) / (sprite.rect.width / sprite.pixelsPerUnit), verticalScale, 1);
                 }
             }
             if (solid) go.AddComponent<BoxCollider2D>().size = new Vector2(scale.x, scale.y);

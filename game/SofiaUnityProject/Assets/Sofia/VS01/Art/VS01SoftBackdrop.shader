@@ -22,7 +22,7 @@ Shader "SOFIA/SoftBackdrop"
             half4 frag(Varyings input) : SV_Target
             {
                 half4 col = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, input.uv) * _BaseColor;
-                half edge = smoothstep(0, .085, input.uv.x) * smoothstep(0, .085, 1 - input.uv.x);
+                half edge = smoothstep(0, .055, input.uv.x) * smoothstep(0, .055, 1 - input.uv.x);
                 col.a *= edge;
                 return col;
             }

@@ -55,6 +55,7 @@ Debe validar:
 - [Música y audio](docs/04_audio/music_pipeline.md)
 - [Pipeline técnico y creativo](docs/05_technical/pipeline.md)
 - [Unity 6.3 LTS + MCP + ChatGPT](docs/05_technical/unity_mcp_workflow.md)
+- [Preparación del PC con Hermes](docs/05_technical/hermes_pc_bootstrap.md)
 - [Roadmap](docs/06_production/roadmap.md)
 - [Flujo de producción end-to-end](docs/06_production/production_workflow.md)
 - [Vertical Slice 01](docs/07_vertical_slice/vs01_overview.md)

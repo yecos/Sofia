@@ -144,7 +144,7 @@ Nota MCP: `screenshot-game-view` fue invocado y devolvió `Game View render text
 - Git LFS inicializado y `.gitattributes` activo.
 - `Library/`, `Temp/`, `Logs/`, `UserSettings/`, `Obj/` y builds permanecen ignorados y no deben subirse.
 - Pendientes manuales/bloqueos: espacio libre inferior a 100 GB; paquetes 2D bloqueados por DNS; Animation/ProBuilder MCP incompatibles con esta versión; captura específica Game View MCP requiere una ventana visible; FMOD Studio requiere descarga/login manual.
-- SHA del commit de bootstrap: se registra después del commit inicial en la revisión de la rama.
+- SHA del commit de bootstrap: `fea3d25405f14fd632532352d1bcd1650b11ce87`.
 
 ## Estado final honesto
 

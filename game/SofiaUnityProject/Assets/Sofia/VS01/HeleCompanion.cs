@@ -7,7 +7,7 @@ namespace Sofia.VS01
         public Transform Father;
         public Renderer[] Visuals;
         public Behaviour State { get; private set; }
-        public float RevealX = 38f;
+        public float RevealX = 125f;
         float phase;
         Vector3 velocity, origin;
         public void Reveal()

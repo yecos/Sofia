@@ -1,17 +1,12 @@
 # Evidencia VS01 — 0:00–1:30
 
-Capturas **reales de Game View**, 2560 × 1440, obtenidas en Play Mode mediante el test `StoryboardFramesAndFallRecovery`, tras posicionar al padre en cada checkpoint y dejar estabilizar la cámara. Los tiempos son etiquetas del storyboard, no el reloj de una partida continua.
+Capturas reales de Game View, 2560×1440, generadas en Play Mode con `StoryboardFramesAndFallRecovery`. El test mueve al padre a cada checkpoint y deja estabilizar la cámara; las etiquetas 0:00/0:30/1:00/1:30 identifican beats de storyboard y no son fotogramas extraídos de una única grabación continua. El recorrido automatizado continuo tiene sus tiempos en `route_timing.json`.
 
-## 0:00 — Despertar
-![Despertar](vs01_000.png)
+| Beat | Imagen |
+| --- | --- |
+| Despertar | [0:00](vs01_000.png) |
+| Primeros pasos | [0:30](vs01_030.png) |
+| Encuentro con Hele | [1:00](vs01_060.png) |
+| Final del primer bloque | [1:30](vs01_090.png) |
 
-## 0:30 — Primeros pasos
-![Primeros pasos](vs01_030.png)
-
-## 1:00 — Aparición de Hele
-![Hele](vs01_060.png)
-
-## 1:30 — Seguir a Hele
-![Arcos](vs01_090.png)
-
-`camera_metrics.json`: muestra de cámara de 120 frames. `validation_results.json`: resultados individuales de Unity MCP. Véase `../../07_vertical_slice/vs01_implementation_0_90.md` para controles, alcance y limitaciones.
+`camera_metrics.json` contiene la muestra breve de cámara. `validation_results.json` resume las pruebas. Véase `../../07_vertical_slice/vs01_implementation_0_90.md` para alcance y limitaciones.

@@ -1,11 +1,23 @@
 {
   "date": "2026-10-07",
   "unityVersion": "6000.6.4f1",
-  "source": "sofia-unity tests_run and console_get_logs",
-  "playMode": {"passed": 4, "failed": 0, "durationSeconds": 53.1266953, "tests": ["CameraIsStableAtRestAndMovesWithoutReversals", "CoyoteAndBufferedLandingAcceptJump", "RouteTraversesWithRealMotorAndThreeArcJumps", "StoryboardFramesAndFallRecovery"]},
+  "source": "sofia-unity tests_run",
+  "playMode": {
+    "passed": 5,
+    "failed": 0,
+    "durationSeconds": 166.6461072,
+    "tests": [
+      "CameraIsStableAtRestAndMovesWithoutReversals",
+      "ContinuousWalkingRouteReachesStoryboardBeats",
+      "CoyoteAndBufferedLandingAcceptJump",
+      "RouteTraversesWithRealMotorAndThreeArcJumps",
+      "StoryboardFramesAndFallRecovery"
+    ]
+  },
   "editMode": {"passed": 2, "failed": 0, "tests": ["SofiaRootFolderExists", "UnityVersionIsPinnedToSixPointSix"]},
-  "postValidationConsoleErrorsLast5Minutes": 0,
   "captureMethod": "ScreenCapture.CaptureScreenshot in Play Mode at storyboard checkpoints",
-  "timingValidated": false,
-  "humanFeelApproval": false
+  "timingValidated": true,
+  "timingSource": "route_timing.json, continuous walking with six jumps",
+  "humanFeelApproval": false,
+  "rigComplete": false
 }

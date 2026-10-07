@@ -12,6 +12,8 @@ namespace Sofia.VS01
         public Transform CameraAnchor;
         public Transform[] Checkpoints;
         public Transform FatherVisual;
+        public SpriteRenderer FatherSprite;
+        public bool IsAwakening => awakening;
         public int CurrentCheckpoint { get; private set; }
         public float Elapsed { get; private set; }
         float fade, lookAhead = 2.5f;
@@ -23,7 +25,7 @@ namespace Sofia.VS01
             if (awakening)
             {
                 Father.ControlEnabled = Elapsed >= 2.5f;
-                FatherVisual.localScale = Vector3.Lerp(new Vector3(1.4f, .6f, 1), Vector3.one, Mathf.SmoothStep(0, 1, (Elapsed - 1f) / 1.5f));
+                FatherVisual.localScale = Vector3.Lerp(new Vector3(1.1f, .78f, 1), Vector3.one, Mathf.SmoothStep(0, 1, (Elapsed - .4f) / 2.1f));
                 FatherVisual.localPosition = Vector3.down * (.9f * (1f - FatherVisual.localScale.y));
                 if (Elapsed >= 2.5f) awakening = false;
             }
@@ -44,10 +46,15 @@ namespace Sofia.VS01
         {
             float dt = Time.deltaTime;
             lookAhead = Mathf.Lerp(lookAhead, Father.Axis < -.1f ? -2.5f : 2.5f, 1 - Mathf.Exp(-dt * 2));
-            Vector3 desired = awakening ? new Vector3(0, 5, 0) : new Vector3(Father.transform.position.x + lookAhead, 3f + Mathf.Max(0, Father.transform.position.y - 1f) * .3f, 0);
+            Vector3 desired = awakening ? new Vector3(0, 2, 0) : new Vector3(Father.transform.position.x + lookAhead, 3f + Mathf.Max(0, Father.transform.position.y - 1f) * .3f, 0);
             CameraAnchor.position = desired;
-            float size = awakening ? 20f : (Hele.State == HeleCompanion.Behaviour.Curious ? 7.3f : 8f);
-            var lens = Rig.Lens; lens.OrthographicSize = Mathf.Lerp(lens.OrthographicSize, size, 1 - Mathf.Exp(-dt * .8f)); Rig.Lens = lens;
+            if (!awakening)
+            {
+                FatherVisual.localRotation = Quaternion.Euler(0, 0, Mathf.Sin(Elapsed * (Father.Running ? 10f : 6f)) * Mathf.Abs(Father.Axis) * 2f);
+                if (FatherSprite && Mathf.Abs(Father.Axis) > .1f) FatherSprite.flipX = Father.Axis < 0;
+            }
+            float size = Hele.State == HeleCompanion.Behaviour.Curious ? 7.3f : 8f;
+            var lens = Rig.Lens; lens.OrthographicSize = awakening ? 6.5f : Mathf.Lerp(lens.OrthographicSize, size, 1 - Mathf.Exp(-dt * .8f)); Rig.Lens = lens;
         }
         public void GoToCheckpoint(int index)
         {

@@ -1,56 +1,24 @@
 # VS01 — Despertar / primer bloque jugable
 
-Fecha: 2026-10-07. Unity: **6000.6.4f1**.
-Rama: `feature/vs01-despertar-90s`, basada en `setup/unity-bootstrap`.
+Fecha: 2026-10-07. Unity 6000.6.4f1. Rama `feature/vs01-despertar-90s`.
 
-## Escena y alcance
+La escena `game/SofiaUnityProject/Assets/Sofia/Scenes/VerticalSlice/SCN_VS01_Despertar.unity` cubre únicamente 0:00–1:30. La ruta física termina en x≈192; no hay contenido de 2:00 en adelante. Se puede abrir directamente y entrar en Play Mode. El constructor reproducible está en **SOFIA > VS01 > Build Despertar 0-90s**; recrea la escena, así que los ajustes posteriores deben incorporarse al constructor.
 
-Abrir `game/SofiaUnityProject/Assets/Sofia/Scenes/VerticalSlice/SCN_VS01_Despertar.unity` y entrar en Play Mode.
+| Beat | Resultado jugable y visual |
+| --- | --- |
+| 0:00 | Despertar sobre pasarela de piedra pintada, encuadre cercano, 2,5 s antes de devolver el control. |
+| 0:30 | Primeros pasos por ruinas frías, subida suave y salto corto. |
+| 1:00 | Hele emerge de la grieta, se aproxima con curiosidad y acaba siguiendo al padre. |
+| 1:30 | Tres cambios de altura y espacio seguro al final del bloque. |
 
-Se implementan los cuatro beats de 0:00 a 1:30 del storyboard. Los nombres temporales identifican beats y checkpoints; **no son una grabación continua de 90 segundos ni una duración ya validada**. El greybox está comprimido para probar control y relaciones. El ritmo de exploración y la duración ±5 s requieren una pasada de diseño con el jugador; la ruta automatizada a velocidad de carrera tarda unos 14 s después del despertar.
+El escenario usa fondos pictóricos originales de ruinas, una pasarela ilustrada de contorno irregular, niebla atmosférica integrada en los fondos y un recorte pintado estable del padre. Se quitaron los arcos geométricos superpuestos al fondo. Algunas piedras pequeñas de interacción siguen siendo greybox; el arte de entorno y la integración de capas aún requieren dirección artística final. Los fondos se repiten a lo largo de la ruta y todavía se perciben sus variaciones.
 
-| Beat | Implementación | Evidencia |
-| --- | --- | --- |
-| 0:00 | Plataforma circular con borde roto, arquitectura monumental en planos azul/gris, pose comprimida de despertar, control bloqueado 2,5 s, plano amplio que se acerca suavemente. | `../evidence/vs01/vs01_000.png` |
-| 0:30 | Plataforma ancha, subida de 0,6 u, piedra de 0,7 u, hueco de 2 u y aterrizaje seguro. | `../evidence/vs01/vs01_030.png` |
-| 1:00 | Grieta, núcleo amarillo/halo; aparición por proximidad, dos órbitas, retroceso si el padre se aproxima, pausa y Follow; push-in de 8,75 %. | `../evidence/vs01/vs01_060.png` |
-| 1:30 | Arcos y dos ascensos con descenso posterior, espacio seguro al final, Hele se adelanta con distancia limitada y acompaña los cambios de altura. | `../evidence/vs01/vs01_090.png` |
+Las cuatro hojas facilitadas por el usuario se guardan en `Assets/Sofia/VS01/Art/SpriteSheets/` **solo como referencias de poses**. Sus cuadros muestran diferencias de proporción y silueta, por lo que no conducen el personaje en Play Mode. El padre jugable usa temporalmente `SPR_Father_Profile.png`. La lámina de cinco vistas `REF_Father_Turnaround.png` establece una base consistente para separar piezas y riggear; no es todavía un PSD/PSB por capas ni un rig de Unity. Véase `vs01_father_rig_direction.md`.
 
-El límite derecho cierra la implementación. No existe puente, mecanismo, Activate, memoria ni contenido de 2:00+.
+Controles: A/D o flechas para caminar a 2,3 u/s; Shift para correr a 5 u/s; Espacio/W/flecha arriba para saltar; R para volver al checkpoint. F1–F4 saltan a los cuatro checkpoints solo en Editor. La física usa Rigidbody2D interpolado en FixedUpdate, aceleración/frenado, coyote time y buffer de salto de 0,13 s cada uno. El movimiento no depende del arte ni de la animación. Una caída profunda devuelve al último checkpoint.
 
-## Controles
+Cinemachine sigue un ancla calculada tras la física, con damping horizontal/vertical y look-ahead. El encuadre inicial es de 6,5 unidades ortográficas y pasa suavemente a 8; durante la curiosidad de Hele llega a 7,3. `PF_Father`, `PF_Hele` y `PF_DespertarGreybox` mantienen la escena organizada. El nombre de este último prefab es histórico: contiene hoy parte del entorno pintado.
 
-- A/D o flechas: caminar a 2,3 u/s.
-- Shift: correr a 5 u/s.
-- Espacio/W/flecha arriba: salto de 9,4 u/s, gravedad 1,8; vuelo aproximado de 1,06 s en suelo plano.
-- R: volver al último checkpoint.
-- En Editor, F1/F2/F3/F4: saltar a CP_000/030/060/090 para revisión.
+Validación: **5 PlayMode PASS, 0 FAIL**, incluidas ruta caminando sin carrera y tiempos de storyboard, mecánica de coyote/buffer, cámara, capturas y recuperación tras caída. **2 EditMode PASS** del proyecto base. En la ruta automatizada de marcha, los checkpoints se alcanzaron a **28,65 s / 56,91 s / 87,16 s**, con seis saltos. La muestra de cámara de 120 cuadros registró 59,60 FPS medios, desplazamiento de reposo 0,000000 u y retroceso 0,000000 u. Son mediciones de Editor, no una validación de rendimiento de build ni una sesión de juego humana.
 
-Coyote time y jump buffer: 0,13 s cada uno. Movimiento en FixedUpdate con Rigidbody2D interpolado, contacto por cast filtrado al suelo, aceleración 22 y frenado 28 u/s². Caída profunda: retorno al checkpoint con velo visual suave, sin contador de vidas.
-
-## Organización
-
-`Assets/Sofia/VS01/` contiene runtime y sus assemblies, `Editor/VS01Builder.cs`, `Tests/`, `Materials/`, `Meshes/` y `Prefabs/`.
-
-Prefabs: `PF_Father`, `PF_Hele`, `PF_DespertarGreybox`. Las referencias entre padre, Hele y cámara se asignan en la escena. El constructor es reproducible desde `SOFIA > VS01 > Build Despertar 0-90s`; recrea la escena y sus assets de greybox, por lo que debe usarse antes de realizar ajustes manuales que se quieran conservar.
-
-CinemachineCamera + PositionComposer y Brain en LateUpdate siguen un anchor basado en la posición interpolada del padre. Look-ahead horizontal ±2,5 u, damping horizontal 0,45 y vertical 0,8; horizonte con desplazamiento vertical limitado. No usa el CameraFollow del smoke test.
-
-Se reparó la referencia vacía de renderer del URP del bootstrap con un UniversalRendererData persistente. Se conservó la escena smoke y se añadió VS01 a Build Settings.
-
-## Validación ejecutada
-
-Unity MCP `tests_run`, PlayMode, assembly `Sofia.VS01.Tests`: **4 pruebas individuales PASS, 0 fallos**.
-
-- Recorrido completo usando movimiento físico y saltos; frenado verificado al detener la entrada.
-- Coyote jump tras dejar el borde y buffer antes de aterrizar.
-- Despertar, Curious → Follow, cuatro capturas reales Game View en checkpoints y retorno tras caída.
-- Cámara estable en reposo y sin retrocesos durante marcha constante.
-
-Métricas de cámara: 120 frames, 60,00 FPS medios, máximo 0,018 s por frame, desplazamiento máximo en reposo 0,000000 u y retroceso máximo 0,000000 u. Esta medición corta en Editor no sustituye un perfil de rendimiento de build ni valida todas las maniobras.
-
-EditMode existente: **2 PASS** (estructura SOFIA y versión de Unity). Consulta de consola posterior: **0 errores** en los últimos cinco minutos. El resumen MCP cuenta un nodo adicional de suite; se reportan aquí los cuatro casos individuales, no cinco pruebas.
-
-## Estado para revisión
-
-Greybox técnicamente jugable y con QA automático pasado. Pendientes dentro de este mismo tramo: revisión humana del feel, expansión/ajuste del ritmo para alcanzar la duración del storyboard, animación del padre y arte/niebla/audio finales. No se considera aprobación artística ni del VS01 completo. Mantener el desarrollo en 0:00–1:30 hasta cerrar esa revisión.
+Las capturas reales de Game View en `docs/evidence/vs01/` corresponden a los cuatro checkpoints y se toman después de estabilizar la cámara. La experiencia está lista para revisión de controles y composición, pero el rig, las animaciones corporales y de capa, audio y los elementos de arte pequeños no están terminados. El primer tramo no se considera aprobado artísticamente todavía.

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10,2747423">
-  <test-suite type="TestSuite" id="1009" name="SofiaUnityProject" fullname="SofiaUnityProject" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10.274742" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10,2704721">
+  <test-suite type="TestSuite" id="1009" name="SofiaUnityProject" fullname="SofiaUnityProject" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10.270472" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="PlayMode" />
     </properties>
-    <test-suite type="Assembly" id="1003" name="Sofia.Tests.dll" fullname="C:/Dev/Sofia/game/SofiaUnityProject/Library/ScriptAssemblies/Sofia.Tests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10.265319" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1003" name="Sofia.Tests.dll" fullname="C:/Dev/Sofia/game/SofiaUnityProject/Library/ScriptAssemblies/Sofia.Tests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10.261008" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="28760" />
+        <property name="_PID" value="22872" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
         <property name="EditorOnly" value="False" />
       </properties>
-      <test-suite type="TestSuite" id="1004" name="Sofia" fullname="Sofia" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10.254494" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1004" name="Sofia" fullname="Sofia" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10.249803" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestSuite" id="1005" name="Tests" fullname="Sofia.Tests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10.237736" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestSuite" id="1005" name="Tests" fullname="Sofia.Tests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10.233046" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-suite type="TestFixture" id="1001" name="SmokePlayModeTests" fullname="Sofia.Tests.SmokePlayModeTests" classname="Sofia.Tests.SmokePlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10.219770" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="1001" name="SmokePlayModeTests" fullname="Sofia.Tests.SmokePlayModeTests" classname="Sofia.Tests.SmokePlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10.214940" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-case id="1002" name="SmokeScenePlayerMovesHeleFollowsAndRunsTenSeconds" fullname="Sofia.Tests.SmokePlayModeTests.SmokeScenePlayerMovesHeleFollowsAndRunsTenSeconds" methodname="SmokeScenePlayerMovesHeleFollowsAndRunsTenSeconds" classname="Sofia.Tests.SmokePlayModeTests" runstate="Runnable" seed="1689729548" result="Passed" start-time="2026-10-07 15:22:01Z" end-time="2026-10-07 15:22:12Z" duration="10.194618" asserts="0">
+            <test-case id="1002" name="SmokeScenePlayerMovesHeleFollowsAndRunsTenSeconds" fullname="Sofia.Tests.SmokePlayModeTests.SmokeScenePlayerMovesHeleFollowsAndRunsTenSeconds" methodname="SmokeScenePlayerMovesHeleFollowsAndRunsTenSeconds" classname="Sofia.Tests.SmokePlayModeTests" runstate="Runnable" seed="886294432" result="Passed" start-time="2026-10-07 17:38:29Z" end-time="2026-10-07 17:38:39Z" duration="10.188467" asserts="0">
               <properties>
                 <property name="_JOINTYPE" value="UnityCombinatorial" />
                 <property name="retryIteration" value="0" />

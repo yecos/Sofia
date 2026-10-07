@@ -13,8 +13,8 @@
 - GPU: NVIDIA GeForce RTX 3060
 - Driver GPU: `32.0.16.1062`
 - RAM: 15.89 GB total; 5.16 GB libre en la inspección inicial
-- Espacio C: 445.5 GB total; 59.49 GB libres
-- Observación: el runbook recomienda 100 GB libres; el equipo quedó por debajo de ese umbral.
+- Espacio C: 445.5 GB total; 38.98 GB libres al finalizar
+- Excepción: el usuario acepta explícitamente continuar con menos de 100 GB libres.
 
 ## Herramientas
 
@@ -53,7 +53,7 @@ Instaladas y resueltas:
 - Tilemap `1.0.9`
 - Timeline `1.0.9`
 
-Pendientes por incompatibilidad con Unity 6000.6:
+No instaladas por incompatibilidad de API con Unity 6000.6.4f1:
 
 - Animation `1.2.9`: errores `CS0619` por uso de `Object.GetInstanceID()` obsoleto.
 - ProBuilder `1.2.9`: mismos errores `CS0619`.
@@ -71,13 +71,13 @@ Resueltos por Unity 6000.6.4f1:
 - Test Framework `1.8.0` resuelto por el editor
 - Módulos de física 2D, partículas y Tilemap incluidos en el editor
 
-Pendientes por fallo DNS de `download.packages.unity.com` durante la instalación:
+Descargadas durante la prueba, pero retiradas porque rompen la compilación de Unity 6000.6.4f1:
 
-- 2D Animation
-- 2D SpriteShape
-- 2D PSD Importer
+- 2D Animation `9.2.2`: 17 errores `CS0619`.
+- 2D SpriteShape `9.1.1`: 3 errores `CS0619`.
+- 2D PSD Importer `9.1.3`: dependiente del stack 2D incompatible.
 
-`2D Sprite` no apareció como paquete independiente en el registro consultado; la funcionalidad base de sprites está disponible en los módulos del editor.
+`2D Sprite` aparece como builtin `com.unity.2d.sprite 1.0.0`.
 
 ## Configuración del proyecto
 
@@ -119,31 +119,35 @@ Resultados:
 - XML PlayMode: `docs/evidence/setup/playmode-results.xml`
 - Logs de pruebas: `docs/evidence/setup/editmode.log`, `docs/evidence/setup/playmode.log`
 
-Nota MCP: `screenshot-game-view` fue invocado y devolvió `Game View render texture is not available. Ensure the Game View window is open and visible.` El canal desktop disponible no permitió abrir/mostrar esa ventana. La captura entregada es una captura real renderizada por la cámara de Unity como evidencia alternativa; no se afirma que sea una captura obtenida por esa llamada MCP específica.
+Nota MCP: `screenshot-game-view` fue invocado y devolvió `Game View render texture is not available. Ensure the Game View window is open and visible.` La captura entregada es una captura real renderizada por la cámara de Unity como evidencia alternativa.
 
 ## Consola y errores
 
 - Código SOFIA y escena: compilan correctamente.
 - Tests: sin errores ni excepciones de test.
-- Warnings revisados: avisos de firma del Licensing Client y `NameResolutionFailure` al intentar conectar el MCP cloud durante algunos arranques; no provocaron fallos de compilación ni de tests.
-- La consola interactiva no puede certificarse como cero warnings porque el canal MCP cloud tuvo reconexiones y errores de red durante Play Mode.
+- Warnings revisados: avisos de firma del Licensing Client y reconexiones cloud intermitentes; no provocaron fallos de compilación ni de tests.
+- MCP reconnect: 3/3 ciclos completos Play/Edit de 10 segundos con `ping` posterior PASS; un intento aislado falló por red y fue reintentado una vez.
 
 ## Errores encontrados y solucionados
 
 1. Unity Hub CLI no localizaba correctamente la instalación MSIX; se usó el ejecutable exacto de Unity 6000.6.4f1.
-2. El plugin base se fijó a 0.93.2 porque OpenUPM no resolvía `latest`.
+2. El plugin base se fijó a 0.93.2 porque OpenUPM no resolvía `latest` en el primer intento.
 3. Las extensiones MCP usan versionado independiente; se corrigieron a sus versiones reales del catálogo.
-4. Animation y ProBuilder no compilan en Unity 6000.6 por `GetInstanceID()` obsoleto; se retiraron para preservar compilación.
-5. Se añadió assembly separado para EditMode y PlayMode tests.
-6. Se registró la escena en Build Settings.
-7. Se creó URP asset y se asignó a Graphics/Quality.
-8. Se cambió el shader de proxies para evitar render magenta.
+4. Animation y ProBuilder MCP no compilan en Unity 6000.6 por `GetInstanceID()` obsoleto; se retiraron para preservar compilación.
+5. 2D Animation y SpriteShape oficiales descargan, pero también contienen `GetInstanceID()` obsoleto para esta revisión de Unity; se retiraron para preservar compilación limpia.
+6. Se añadió assembly separado para EditMode y PlayMode tests.
+7. Se registró la escena en Build Settings.
+8. Se creó URP asset y se asignó a Graphics/Quality.
+9. Se cambió el shader de proxies para evitar render magenta.
 
 ## Git y pendientes
 
 - Git LFS inicializado y `.gitattributes` activo.
 - `Library/`, `Temp/`, `Logs/`, `UserSettings/`, `Obj/` y builds permanecen ignorados y no deben subirse.
-- Pendientes manuales/bloqueos: espacio libre inferior a 100 GB; paquetes 2D bloqueados por DNS; Animation/ProBuilder MCP incompatibles con esta versión; captura específica Game View MCP requiere una ventana visible; FMOD Studio requiere descarga/login manual.
+- Pendientes manuales/bloqueos: paquetes 2D y extensiones Animation/ProBuilder incompatibles con esta revisión de Unity; captura específica Game View MCP requiere una ventana visible; FMOD Studio requiere descarga/login manual.
+- DNS: recuperado; `ai-game.dev`, OpenUPM y los registros Unity responden por HTTPS al finalizar.
+- Disco: excepción aceptada por el usuario (`DISK_REQUIREMENT = USER_ACCEPTED_EXCEPTION`).
+- FMOD: `WAITING_FOR_USER_LOGIN` / descarga oficial manual.
 - SHA del commit de bootstrap: `fea3d25405f14fd632532352d1bcd1650b11ce87`.
 
 ## Estado final honesto

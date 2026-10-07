@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0,0379586">
-  <test-suite type="TestSuite" id="1000" name="SofiaUnityProject" fullname="SofiaUnityProject" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.037959" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0,0425798">
+  <test-suite type="TestSuite" id="1000" name="SofiaUnityProject" fullname="SofiaUnityProject" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.042580" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="EditMode" />
     </properties>
-    <test-suite type="Assembly" id="1011" name="Sofia.EditModeTests.dll" fullname="C:/Dev/Sofia/game/SofiaUnityProject/Library/ScriptAssemblies/Sofia.EditModeTests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.030011" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1011" name="Sofia.EditModeTests.dll" fullname="C:/Dev/Sofia/game/SofiaUnityProject/Library/ScriptAssemblies/Sofia.EditModeTests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.034597" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="28356" />
+        <property name="_PID" value="31680" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="EditMode" />
         <property name="EditorOnly" value="True" />
       </properties>
-      <test-suite type="TestSuite" id="1012" name="Sofia" fullname="Sofia" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.029581" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1012" name="Sofia" fullname="Sofia" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.034175" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestSuite" id="1013" name="Tests" fullname="Sofia.Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.029372" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestSuite" id="1013" name="Tests" fullname="Sofia.Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.033938" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-suite type="TestFixture" id="1008" name="ProjectSmokeEditModeTests" fullname="Sofia.Tests.ProjectSmokeEditModeTests" classname="Sofia.Tests.ProjectSmokeEditModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.028293" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="1008" name="ProjectSmokeEditModeTests" fullname="Sofia.Tests.ProjectSmokeEditModeTests" classname="Sofia.Tests.ProjectSmokeEditModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.032758" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-case id="1010" name="SofiaRootFolderExists" fullname="Sofia.Tests.ProjectSmokeEditModeTests.SofiaRootFolderExists" methodname="SofiaRootFolderExists" classname="Sofia.Tests.ProjectSmokeEditModeTests" runstate="Runnable" seed="703619451" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.011117" asserts="0">
+            <test-case id="1010" name="SofiaRootFolderExists" fullname="Sofia.Tests.ProjectSmokeEditModeTests.SofiaRootFolderExists" methodname="SofiaRootFolderExists" classname="Sofia.Tests.ProjectSmokeEditModeTests" runstate="Runnable" seed="1399055166" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.011769" asserts="0">
               <properties>
                 <property name="retryIteration" value="0" />
                 <property name="repeatIteration" value="0" />
               </properties>
             </test-case>
-            <test-case id="1009" name="UnityVersionIsPinnedToSixPointSix" fullname="Sofia.Tests.ProjectSmokeEditModeTests.UnityVersionIsPinnedToSixPointSix" methodname="UnityVersionIsPinnedToSixPointSix" classname="Sofia.Tests.ProjectSmokeEditModeTests" runstate="Runnable" seed="2112914063" result="Passed" start-time="2026-10-07 15:21:14Z" end-time="2026-10-07 15:21:14Z" duration="0.000808" asserts="0">
+            <test-case id="1009" name="UnityVersionIsPinnedToSixPointSix" fullname="Sofia.Tests.ProjectSmokeEditModeTests.UnityVersionIsPinnedToSixPointSix" methodname="UnityVersionIsPinnedToSixPointSix" classname="Sofia.Tests.ProjectSmokeEditModeTests" runstate="Runnable" seed="220703512" result="Passed" start-time="2026-10-07 17:37:57Z" end-time="2026-10-07 17:37:57Z" duration="0.000968" asserts="0">
               <properties>
                 <property name="retryIteration" value="0" />
                 <property name="repeatIteration" value="0" />

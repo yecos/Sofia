@@ -1,24 +1,24 @@
-VBCSCompilerPreWarmer: watching VBCSCompiler (PID 24808)
-VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 13640)
-VBCSCompiler prewarm took 14.53 ms
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 13172)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 28380)
+VBCSCompiler prewarm took 13.28 ms
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-yecos" at "2026-10-07T17:37:46.7262597Z"
 Built from '6000.6/staging' branch; Version is '6000.6.4f1 (12bfff696524) revision 1228799'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-yecos" at "2026-10-07T15:20:54.5892245Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'es' Physical Memory: 16275 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-10-07T15:20:54Z
+Date: 2026-10-07T17:37:46Z
 [Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 24580, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.3+d7ffd15
-  Session Id:              71e435ee91b1429e8a1f6ead7213988a
+  Session Id:              9ce7131d3ef144999fe3554659242a6d
   Correlation Id:          1dab824b535124f128773ce8b7c19f9c
-  External correlation Id: 8942729984446436216
+  External correlation Id: 5031254178784794774
   Machine Id:              Arqokdisii1bWY6Zyxm4B8vLJBA=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-yecos" (connect: 0.00s, validation: 0.00s, handshake: 0.04s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-yecos-notifications" at "2026-10-07T15:20:54.6352657Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-yecos-notifications" at "2026-10-07T17:37:46.7652819Z"
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -27,7 +27,7 @@ Date: 2026-10-07T15:20:54Z
   Type: Assigned
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
-[Licensing::Module] Licensing Background thread has ended after 0.05s
+[Licensing::Module] Licensing Background thread has ended after 0.04s
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.6.4f1\Editor\Unity.exe
@@ -82,16 +82,16 @@ C:/Dev/Sofia/game/SofiaUnityProject
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Logging is directed to a specific file, skipping project log.
-Player connection [21536]  Target information:
+Player connection [10200]  Target information:
 
-Player connection [21536]  * "[IP] 192.168.128.15 [Port] 55505 [Flags] 2 [Guid] 3011882586 [EditorId] 3011882586 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-99DFKIK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [10200]  * "[IP] 192.168.128.15 [Port] 55505 [Flags] 2 [Guid] 3848412218 [EditorId] 3848412218 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-99DFKIK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21536] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21536] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10200] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10200] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-28356" after 0.3 seconds.
+[Package Manager] Connected to IPC stream "Upm-31680" after 0.3 seconds.
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 Initialising UDS system complete:
@@ -126,7 +126,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.4f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.4f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 CodeReloadManager initialized
 ImportWorker Server TCP listen port: 0
 AcceleratorClientConnectionCallback - disconnected - :0
@@ -134,30 +134,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002200 seconds.
+Registered in 0.001872 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.793 seconds
-Domain Reload Profiling: 1453ms
-	BeginReloadAssembly (153ms)
-		CreateAndSetChildDomain (11ms)
+- Finished resetting the current domain, in  0.763 seconds
+Domain Reload Profiling: 1424ms
+	BeginReloadAssembly (148ms)
+		CreateAndSetChildDomain (8ms)
 	RebuildCommonClasses (6ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (79ms)
-	LoadAllAssembliesAndSetupDomain (400ms)
-		LoadAssemblies (139ms)
-		TypeCache.Refresh (273ms)
-			TypeCache.ScanAssembly (257ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (410ms)
+		LoadAssemblies (137ms)
+		TypeCache.Refresh (269ms)
+			TypeCache.ScanAssembly (251ms)
 		AnalyzeDomain (1ms)
-	FinalizeReload (795ms)
+	FinalizeReload (764ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (134ms)
-			ProcessInitializeOnLoadAttributes (159ms)
-			ProcessInitializeOnLoadMethodAttributes (234ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (157ms)
+			ProcessInitializeOnLoadMethodAttributes (218ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -246,13 +246,13 @@ warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
       Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.6.4f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.6.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
 DisplayProgressbar: Compiling Scripts
-ExitCode: 0 Duration: 0s288ms
+ExitCode: 0 Duration: 0s261ms
 [732/943    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-*** Tundra build success (0.25 seconds), 1 items updated, 943 evaluated
-AssetDatabase: script compilation time: 0.832229s
+*** Tundra build success (0.22 seconds), 1 items updated, 943 evaluated
+AssetDatabase: script compilation time: 0.788767s
 Begin MonoManager ReloadAssembly
-Total cache size 163070488
-Total cache size after purge 163070488, took 00:00:00.1831305
+Total cache size 194906840
+Total cache size after purge 194906840, took 00:00:00.2164013
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
@@ -260,7 +260,7 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-<color=#ffaa00>warn:</color> [10:21:01:5815] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1539ff40-def3-445d-b219-11fc0b20e25b] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+<color=#ffaa00>warn:</color> [12:37:53:5566] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[2917d997-8c6b-4aae-bb4c-654998e021d5] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
@@ -299,7 +299,7 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.ReadOnlyS
 
 (Filename: ./Library/PackageCache/com.ivanmurzak.unity.mcp@53b82217a9c9/Runtime/UnityMcpPlugin.Build.cs Line: 211)
 
-<color=#ffaa00>warn:</color> [10:21:01:5970] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1539ff40-def3-445d-b219-11fc0b20e25b] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+<color=#ffaa00>warn:</color> [12:37:53:5715] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[2917d997-8c6b-4aae-bb4c-654998e021d5] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
@@ -338,7 +338,7 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.ReadOnlyS
 
 (Filename: ./Library/PackageCache/com.ivanmurzak.unity.mcp@53b82217a9c9/Runtime/UnityMcpPlugin.Build.cs Line: 226)
 
-<color=#ffaa00>warn:</color> [10:21:01:6011] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1539ff40-def3-445d-b219-11fc0b20e25b] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
+<color=#ffaa00>warn:</color> [12:37:53:5736] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[2917d997-8c6b-4aae-bb4c-654998e021d5] EnsureConnection Connection not available and auto-reconnect disabled for endpoint: /hub/mcp-server
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
@@ -379,29 +379,29 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.ReadOnlyS
 
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  2.405 seconds
-Domain Reload Profiling: 3694ms
-	BeginReloadAssembly (300ms)
-		DisableScriptedObjects (29ms)
-		CreateAndSetChildDomain (61ms)
+- Finished resetting the current domain, in  2.322 seconds
+Domain Reload Profiling: 3588ms
+	BeginReloadAssembly (341ms)
+		DisableScriptedObjects (79ms)
+		CreateAndSetChildDomain (53ms)
 	RebuildCommonClasses (12ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (868ms)
-		LoadAssemblies (397ms)
-		TypeCache.Refresh (299ms)
-			TypeCache.ScanAssembly (277ms)
-		AnalyzeDomain (76ms)
-			BuildScriptInfoCaches (66ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2406ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (808ms)
+		LoadAssemblies (358ms)
+		TypeCache.Refresh (282ms)
+			TypeCache.ScanAssembly (262ms)
+		AnalyzeDomain (80ms)
+			BuildScriptInfoCaches (71ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (2323ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (146ms)
-			ProcessInitializeOnLoadAttributes (1444ms)
-			ProcessInitializeOnLoadMethodAttributes (414ms)
-			AfterProcessingInitializeOnLoad (9ms)
-		AwakeInstancesAfterBackupRestoration (39ms)
+			BeforeProcessingInitializeOnLoad (147ms)
+			ProcessInitializeOnLoadAttributes (1486ms)
+			ProcessInitializeOnLoadMethodAttributes (319ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
 Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:SofiaURP
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -461,681 +461,76 @@ UnityEngine.Rendering.GraphicsSettings:GetDefaultMaterial (UnityEngine.Rendering
 (Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 801)
 
 Starting new worker id: 0 with log in C:/Dev/Sofia/game/SofiaUnityProject/Logs/AssetImportWorkerHW0.log
-Importing 'GUID: d19f4f8a13b6edb48b986a47ec96402e - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapShadowMaskIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 
-Compiling Ray Tracing Shader "LightmapShadowMaskIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: d19f4f8a13b6edb48b986a47ec96402e' -> (Import Result ID: 'dafd590d2391337a465ae69593d8302f') in 0.322 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87431ef3e18644b7c43cfcb1371ea08d DependenciesID=ee798b4147c0523a2e71470313c50ac2 StaticDependenciesID=9fd4e9b2e1ad89e7cbffc601eff4d03f 
-Importing 'GUID: 737a1597422c12547a8714d76a9406ec - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapGBufferDebug.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapGBufferDebug.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 737a1597422c12547a8714d76a9406ec' -> (Import Result ID: 'bc136651d20dd1689538d95b62660551') in 0.026 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=62fe39ae6f08f106b858ebaaec45c120 DependenciesID=1600f23823fe288b7c7b48b48247b012 StaticDependenciesID=b513b01e29d0aa4d28825e4d4fb57fb4 
-Importing 'GUID: f32463968f29423cad25aee15a14b9f1 - Path: Packages/com.unity.render-pipelines.core/Runtime/Lighting/SurfaceCache/PunctualLightSampling.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "PunctualLightSampling.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: f32463968f29423cad25aee15a14b9f1' -> (Import Result ID: '8d83dfe3433e86936dab6b3cc28f3590') in 0.106 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=86a6fadd6b8c04e32f272c919d8b6f6e DependenciesID=58f005c3f91e9c75e0df9594c7a90504 StaticDependenciesID=b63d74c4e924df89cb98a36e44fc1845 
-Importing 'GUID: 1451d029813b192429211be28181beab - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapNormalIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapNormalIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 1451d029813b192429211be28181beab' -> (Import Result ID: 'dc54081b245ff2614a6b72294cfba5d4') in 0.030 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=586feb4eadefcf330fe3445b7cc6434b DependenciesID=68347bfc4726871fddd7602ea36ecc4e StaticDependenciesID=5afd8eadeec03e368f74c3a5603c453d 
-Importing 'GUID: 94a070d33e408384bafc1dea4a565df9 - Path: Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "TraceRenderingLayerMask.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 94a070d33e408384bafc1dea4a565df9' -> (Import Result ID: '575939a214356f3a3f01041ff9827388') in 0.037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7cee2528048de00e3c9b431884713e23 DependenciesID=a6ed24f2bdf656ec38a057ecda6cbb30 StaticDependenciesID=25a592d065c9c4788553066128367c57 
-Importing 'GUID: 94a39d12848d8d64ca962a72b74e7c50 - Path: Packages/com.unity.render-pipelines.core/Runtime/Lighting/SurfaceCache/Estimation.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "Estimation.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 94a39d12848d8d64ca962a72b74e7c50' -> (Import Result ID: '8e45f7d94b264b900cc2730fdef51d27') in 0.039 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd35c9d903e39c961e4da30bd9dcd33b DependenciesID=e6c861d322a0d590d8ce34ef14e8dddb StaticDependenciesID=ffb0a11028fb7b99287455d15347e1d8 
-Importing 'GUID: f5ba4d424d4566249b3d94cf81a3e916 - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapDirectDirectionalAndEnvironmentIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapDirectDirectionalAndEnvironmentIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: f5ba4d424d4566249b3d94cf81a3e916' -> (Import Result ID: 'ac570b1ad1a0d15bb78c8fe79a717808') in 0.033 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3a58bd89af571e0a56d0266235abba16 DependenciesID=a22589d805b7065ceeedf78b7d14a453 StaticDependenciesID=d4bdfd2147f181839dcd88d16b4cc45b 
-Importing 'GUID: 7624adbeb148b5c48ab5ab660cc2602a - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapIndirectIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapIndirectIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 7624adbeb148b5c48ab5ab660cc2602a' -> (Import Result ID: 'ca673a6f48fbbe294e92f6d684b68f42') in 0.028 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9adeacf15a9e92caba530c19c5f5cd4c DependenciesID=297bf8aafbeb932047eefeb5897dc7c5 StaticDependenciesID=637eaa30376abb268136eb146f59c034 
-Importing 'GUID: 5951703b3d165764c95c653e98350884 - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapDirectBRDFIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapDirectBRDFIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 5951703b3d165764c95c653e98350884' -> (Import Result ID: '14df58ef7ebbaaebd2bf09fc5a3d77a4') in 0.036 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=55b5d10cd11a3d0af18dfbedf5c22acf DependenciesID=f9a0e9b816bf14fde7432fa650b99e99 StaticDependenciesID=059ad849da4bff5dcc29e3cff7813344 
-Importing 'GUID: 99ac6221b6ecd7b479be13e8b9866300 - Path: Packages/com.unity.render-pipelines.core/Tests/Editor/PathTracing/Shaders/TerrainRayMarchingTest.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "TerrainRayMarchingTest.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 99ac6221b6ecd7b479be13e8b9866300' -> (Import Result ID: '9b37bfb5414eb660b920e65ad2bad84d') in 0.023 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=27a34ed6b20eb255a59fb4210f44099d DependenciesID=d833b4f93c226fb18d49e9e10158fdcd StaticDependenciesID=dc53200b7c0c8c0e6f9de4f99348b559 
-Importing 'GUID: e9f4de6d1e07fb94f9a60d35b618f724 - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapGBufferIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapGBufferIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: e9f4de6d1e07fb94f9a60d35b618f724' -> (Import Result ID: '9ffa545e96aae3c6e29881f51419ab9a') in 0.036 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46566f2b2504bb390fccb5862c368fe5 DependenciesID=85b3e050e00a15de08993832dd66c34d StaticDependenciesID=3c625e26646b7228663e0de2b2c1d69b 
-Importing 'GUID: 5a2a534753fbdb44e96c3c78b5a6999d - Path: Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/DynamicGI/DynamicGISkyOcclusion.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "DynamicGISkyOcclusion.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 5a2a534753fbdb44e96c3c78b5a6999d' -> (Import Result ID: 'bf5b3e5548e2ffd4fdb7056be02f26f4') in 0.041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bebec64320e903413d9a8da75e5f5441 DependenciesID=d273d3b64aa2c822b845b25725a1a2f8 StaticDependenciesID=72ee5fda06862b709c15f6cbb7db6f05 
-Importing 'GUID: 5bbebdef5916845478fcef13fa10d89f - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapDirectStochasticLightIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapDirectStochasticLightIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 5bbebdef5916845478fcef13fa10d89f' -> (Import Result ID: 'fcf461e6f2b64cce73fb4faed66e98e6') in 0.034 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c1148ad01ee8f2c7d260756c504d1b09 DependenciesID=c7464506e0286a5c69e90f9f5fce0cbe StaticDependenciesID=471ca71b6b19c4611a46691a7356c8a6 
-Importing 'GUID: 1c410815c01ce1d4d82c645c0cd45747 - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapAOIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapAOIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 1c410815c01ce1d4d82c645c0cd45747' -> (Import Result ID: '8c1c7645e5cc8b646aabf2f04f595921') in 0.032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=406e03dc11817505b76c631603f27e12 DependenciesID=98b147760644f634d8b186738246461b StaticDependenciesID=219d1b7269d01f2442d424f53e04d073 
-Importing 'GUID: 2c32233d92a2d0745930664c087c5c9a - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/ProbeIntegrationValidity.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "ProbeIntegrationValidity.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 2c32233d92a2d0745930664c087c5c9a' -> (Import Result ID: 'f304ce5c6411a50ce6c11793c2bb5da5') in 0.028 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb54b03892440bf6d8b82fd7c8a33ee7 DependenciesID=843170b4bdecc3603c848a6de38b8657 StaticDependenciesID=89ce6b5e76d568c473e42bb2e82d857d 
-Importing 'GUID: ace95ac84e213794891b4bd7c9b3c158 - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/LightmapValidityIntegration.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "LightmapValidityIntegration.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: ace95ac84e213794891b4bd7c9b3c158' -> (Import Result ID: '579cb5a692a4ee99bbdd3a078d35d67b') in 0.032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c6767c8b4dc26605e605e05a666a0bb0 DependenciesID=e78c29d4b5cd9561c22a4bfe65c91c92 StaticDependenciesID=af3a8789fbe725883be9c99ebb7cf5e2 
-Importing 'GUID: 5ecdabd800f05984696f22ba95284516 - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/ProbeIntegrationIndirect.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "ProbeIntegrationIndirect.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 5ecdabd800f05984696f22ba95284516' -> (Import Result ID: 'e70ffe0bd62848296026d6d2e7892bb3') in 0.029 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2f5d4e03340cfd910ee43d60ab3c23c DependenciesID=4a36ca2c907309e3d5b3e56b91ed4110 StaticDependenciesID=1ad901001e2e557153e1de5753d25220 
-Importing 'GUID: 6e0b547bab30a804c8123974120d583f - Path: Packages/com.unity.render-pipelines.core/Tests/Runtime/PathTracing/PathIteratorTest.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "PathIteratorTest.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 6e0b547bab30a804c8123974120d583f' -> (Import Result ID: '99b318b44eac12f79e9511661b1f2e97') in 0.035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=62e299ab8a06b453a7a131612b3d654e DependenciesID=79e4a317806d92a68dfef6296a690206 StaticDependenciesID=e24ea404bb4dabe55ffbcaa7b840b299 
-Importing 'GUID: de3013e16d99f2746ab1735ec06a660b - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/ProbeIntegrationOcclusion.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "ProbeIntegrationOcclusion.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: de3013e16d99f2746ab1735ec06a660b' -> (Import Result ID: '8d753e35be2f6a79c1dfadc6e7b7c9b5') in 0.031 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cdbfcddb4045b11792cc5535fb3017dd DependenciesID=3a46bc25ea02d852bec7aa64274ef0b9 StaticDependenciesID=d23a0c4a2896e547ad436f2fd232bb27 
-Importing 'GUID: fe7f1a959d1d3f544a208b7e8805e6cd - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/ProbeIntegrationDirectDirectionalAndEnvironment.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "ProbeIntegrationDirectDirectionalAndEnvironment.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: fe7f1a959d1d3f544a208b7e8805e6cd' -> (Import Result ID: 'ffe11fd31ea4fdea4cdc99650ad5d08e') in 0.026 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f65bb11e4d99da6ad313ec12077e7212 DependenciesID=6229bd0d7cd9116e7d6452bc32698d04 StaticDependenciesID=b8525778ccd6bf87644fae631483c773 
-Importing 'GUID: 1f9bfe60b4ad75943a5281839c1a4e5c - Path: Packages/com.unity.render-pipelines.core/Runtime/PathTracing/Shaders/ProbeIntegrationDirectStochasticLight.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "ProbeIntegrationDirectStochasticLight.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: 1f9bfe60b4ad75943a5281839c1a4e5c' -> (Import Result ID: '698cf050f634306416e1add19458de45') in 0.032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f207a5c01257b99decff595fee37001f DependenciesID=69d31a82659dcfa72e5cff4dc4de8813 StaticDependenciesID=bb23e9aed0fe8778db1283cad6c57003 
-Importing 'GUID: ff2cbab5da58bf04d82c5f34037ed123 - Path: Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/VirtualOffset/TraceVirtualOffset.urtshader' with importer (ScriptedImporter : Unity.Rendering.LightTransport.Editor:UnityEditor.Rendering.UnifiedRayTracing:UnifiedRTShaderImporter)
-
-Compiling Ray Tracing Shader "TraceVirtualOffset.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
-Imported 'GUID: ff2cbab5da58bf04d82c5f34037ed123' -> (Import Result ID: '28ca2e1c0db21ff748f09a55335a4be3') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=28dbe8e0bd20faddbac957b0d2a2b25b DependenciesID=56a7bc9a254cc8cf556d2d71427255f5 StaticDependenciesID=577fb2ca56f9c9cef1dba593cc7f61b6 
-
-Asset Pipeline Refresh (id=8704fc65ab1ac3f42bff6b34ea6e2c1c): Total: 6.833 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=6c8976598f6938640af2736c32ddd242): Total: 5.153 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	(Values over 0.05ms)
 	Summary:
-		Imports: total=22 (actual=22, local cache=0, cache server=0)
-		Asset DB Process Time: managed=3 ms, native=4038 ms
-		Asset DB Callback time: managed=216 ms, native=251 ms
-		Scripting: domain reloads=1, domain reload time=1372 ms, compile time=834 ms, other=116 ms
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2842 ms
+		Asset DB Callback time: managed=52 ms, native=22 ms
+		Scripting: domain reloads=1, domain reload time=1335 ms, compile time=790 ms, other=109 ms
 		Project Asset Count: scripts=1217, non-scripts=2105
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 25.450ms
-	ApplyChangesToAssetFolders: 0.729ms
-	Scan: 111.585ms
-	Collect global state as custom dependencies: 26.822ms
-	CategorizeScriptCompilationAssets: 35.805ms
-	ProcessAssetsWithTransientArtifactChanges: 77.919ms
-	CategorizeAssets: 63.306ms
-	CompileScripts: 833.692ms
-	ImportOutOfDateAssets: 3491.927ms (2410.588ms without children)
-		ImportManagerImport: 1068.623ms (2.164ms without children)
-			UpdateCategorizedAssets: 1.922ms
-		UnloadImportedAssets: 3.135ms
-		ReloadImportedAssets: 3.339ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.667ms
-		ImportSchedulerStart: 8.876ms
-	PostProcessAllAssets: 443.715ms
-		ComputeShaderImportPostprocess 121.761ms
-		RaytracingShaderImportPostprocess 101.899ms
-		VCAutoAddAssetPostprocess 0.922ms
-		XRBuildSystem.XRAssetImported 0.087ms
-		MonoPostProcessAllAssets: 216.951ms
-			AssetPostprocessor.OnPostprocessAllAssets 118.876ms
-			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 22.746ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 16.184ms
-			SyncVS.PostprocessSyncProject 10.948ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.306ms
-			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 3.059ms
-			AssetChangedListener.OnPostprocessAllAssets 2.790ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.341ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.012ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.602ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.299ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 1.279ms
-			MaterialPostprocessor.OnPostprocessAllAssets 0.945ms
-			PostProcessor.OnPostprocessAllAssets 0.939ms
-			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.678ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.587ms
-			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.575ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 0.489ms
-			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.479ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.426ms
-			CinemachineSettings.OnPostprocessAllAssets 0.392ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.352ms
-			AssetEvents.OnPostprocessAllAssets 0.346ms
-			AssetProcessor.OnPostprocessAllAssets 0.306ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.249ms
-			DomainReloadProcessor.OnPostprocessAllAssets 0.243ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.227ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.217ms
-			SamplePostprocessor.OnPostprocessAllAssets 0.175ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 0.166ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.165ms
-			ThemePostprocessor.OnPostprocessAllAssets 0.156ms
-			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.156ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.100ms
-	PostAssetChangesProfiler: 1.513ms
-	UnloadStreamsBegin: 2.284ms
-	PersistCurrentRevisions: 0.231ms
-	GenerateScriptTypeHashes: 1.938ms
-	GenerateScriptTypeSerializationHashes: 3.717ms
-	Untracked: 1694.362ms
+	InvokePackagesCallback: 24.293ms
+	ApplyChangesToAssetFolders: 0.967ms
+	Scan: 85.596ms
+	Collect global state as custom dependencies: 24.678ms
+	CategorizeScriptCompilationAssets: 36.544ms
+	ProcessAssetsWithTransientArtifactChanges: 67.033ms
+	CategorizeAssets: 53.409ms
+	CompileScripts: 790.116ms
+	ImportOutOfDateAssets: 2340.418ms (2327.063ms without children)
+		UnloadImportedAssets: 3.245ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.764ms
+		ImportSchedulerStart: 9.310ms
+	PostProcessAllAssets: 52.233ms
+		MonoPostProcessAllAssets: 52.155ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 18.452ms
+			SyncVS.PostprocessSyncProject 12.599ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.324ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.180ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.119ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.767ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.739ms
+			CinemachineSettings.OnPostprocessAllAssets 0.439ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.326ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.309ms
+			DomainReloadProcessor.OnPostprocessAllAssets 0.297ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.228ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.200ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.158ms
+	UnloadStreamsBegin: 3.726ms
+	PersistCurrentRevisions: 0.132ms
+	GenerateScriptTypeHashes: 1.631ms
+	GenerateScriptTypeSerializationHashes: 3.131ms
+	Untracked: 1650.488ms
 
 Application.AssetDatabase Initial Refresh End
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-Scanning for USB devices : 7.193ms
+Scanning for USB devices : 7.760ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-SofiaUnityProject
-Worker ready: AssetImportWorkerHW0 0
-Unloading 70 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5011 unused Assets / (6.2 MB). Loaded Objects now: 5888.
-Memory consumption went from 416.3 MB to 410.2 MB.
-Total: 94.170300 ms (FindLiveObjects: 0.925900 ms CreateObjectMapping: 1.025900 ms MarkObjects: 87.489400 ms  DeleteObjects: 4.326800 ms)
-
-WebException: Error: NameResolutionFailure
-  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00044] in <3c0e69b4cd544897a25b0e700ba31a7c>:0 
-  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <3c0e69b4cd544897a25b0e700ba31a7c>:0 
-  at System.Net.WebOperation.Run () [0x0009a] in <3c0e69b4cd544897a25b0e700ba31a7c>:0 
-  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <3c0e69b4cd544897a25b0e700ba31a7c>:0 
-  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <3c0e69b4cd544897a25b0e700ba31a7c>:0 
-  at System.Net.HttpWebRequest.EndGetResponse (System.IAsyncResult asyncResult) [0x00020] in <3c0e69b4cd544897a25b0e700ba31a7c>:0 
-  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x0000f] in <c5ae8a4eeb824526b5df2932bc2395e0>:0 
---- End of stack trace from previous location where exception was thrown ---
-
-  at System.Net.Http.MonoWebRequestHandler.SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) [0x004ae] in <667d76fa903840c0aadb3309354d5c40>:0 
-Rethrow as HttpRequestException: An error occurred while sending the request
-  at System.Net.Http.MonoWebRequestHandler.SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) [0x00509] in <667d76fa903840c0aadb3309354d5c40>:0 
-  at Microsoft.AspNetCore.Http.Connections.Client.Internal.AccessTokenHttpMessageHandler.SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) [0x00163] in <6ef82408f2fc4c20b73d4aff94c15c3c>:0 
-  at Microsoft.AspNetCore.Http.Connections.Client.Internal.LoggingHttpMessageHandler.SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken) [0x0009f] in <6ef82408f2fc4c20b73d4aff94c15c3c>:0 
-  at System.Net.Http.HttpClient.SendAsyncWorker (System.Net.Http.HttpRequestMessage request, System.Net.Http.HttpCompletionOption completionOption, System.Threading.CancellationToken cancellationToken) [0x000e8] in <667d76fa903840c0aadb3309354d5c40>:0 
-  at Microsoft.AspNetCore.Http.Connections.Client.HttpConnection.NegotiateAsync (System.Uri url, System.Net.Http.HttpClient httpClient, Microsoft.Extensions.Logging.ILogger logger, System.Threading.CancellationToken cancellationToken) [0x00175] in <6ef82408f2fc4c20b73d4aff94c15c3c>:0 
-UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&)
-UnityEngine.DebugLogHandler:Internal_LogException_Injected(Exception, IntPtr)
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log(LogLevel, EventId, Object, Exception, Func`3) (at .\Library\PackageCache\com.ivanmurzak.unity.mcp@53b82217a9c9\Runtime\Logger\UnityLogger.cs:118)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0(LogLevel, EventId, ILogger, Exception, Func`3, List`1&, Object&)
-Microsoft.Extensions.Logging.Logger:Log(LogLevel, EventId, Object, Exception, Func`3)
-Microsoft.Extensions.Logging.Logger`1:Microsoft.Extensions.Logging.ILogger.Log(LogLevel, EventId, Object, Exception, Func`3)
-com.IvanMurzak.McpPlugin.ForwardingLogger:Microsoft.Extensions.Logging.ILogger.Log(LogLevel, EventId, LogValues`1, Exception, Func`3)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0(LogLevel, EventId, ILogger, Exception, Func`3, List`1&, LogValues`1&)
-Microsoft.Extensions.Logging.Logger:Log(LogLevel, EventId, LogValues`1, Exception, Func`3)
-Microsoft.Extensions.Logging.Logger`1:Microsoft.Extensions.Logging.ILogger.Log(LogLevel, EventId, LogValues`1, Exception, Func`3)
-Microsoft.Extensions.Logging.<>c__DisplayClass10_0`1:<Define>g__Log|0(ILogger, Uri, Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Log:ErrorWithNegotiation(ILogger, Uri, Exception)
-Microsoft.AspNetCore.Http.Connections.Client.<NegotiateAsync>d__45:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-System.Net.Http.<SendAsyncWorker>d__47:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Internal.<SendAsync>d__2:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Internal.<SendAsync>d__3:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-System.Net.Http.<SendAsync>d__99:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Threading.Tasks.UnwrapPromise`1:TrySetFromTask(Task, Boolean)
-System.Threading.Tasks.UnwrapPromise`1:InvokeCore(Task)
-System.Threading.Tasks.UnwrapPromise`1:Invoke(Task)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Threading.Tasks.TaskFactory`1:FromAsyncCoreLogic(IAsyncResult, Func`2, Action`1, Task`1, Boolean)
-System.Threading.Tasks.<>c__DisplayClass35_0:<FromAsyncImpl>b__0(IAsyncResult)
-System.Threading.Tasks.<>c__DisplayClass3_0:<InvokeCallbackWhenTaskCompletes>b__0()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-System.Net.<RunWithTimeoutWorker>d__244`1:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task`1:TrySetResult(Boolean)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetResult(Boolean)
-System.Net.<WaitAsync>d__46:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task`1:TrySetResult(Task)
-System.Threading.Tasks.CompleteOnInvokePromise:Invoke(Task)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-System.Net.<MyGetResponseAsync>d__246:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction(Action, Boolean, Task&)
-System.Threading.Tasks.Task:FinishContinuations()
-System.Threading.Tasks.Task:FinishStageThree()
-System.Threading.Tasks.Task:FinishStageTwo()
-System.Threading.Tasks.Task:Finish(Boolean)
-System.Threading.Tasks.Task:TrySetException(Object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1:SetException(Exception)
-System.Net.<WaitForCompletion>d__15:MoveNext()
-System.Runtime.CompilerServices.MoveNextRunner:InvokeMoveNext(Object)
-System.Threading.ExecutionContext:RunInternal(ExecutionContext, ContextCallback, Object, Boolean)
-System.Threading.ExecutionContext:Run(ExecutionContext, ContextCallback, Object, Boolean)
-System.Runtime.CompilerServices.MoveNextRunner:Run()
-System.Threading.Tasks.AwaitTaskContinuation:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
-System.Threading.ThreadPoolWorkQueue:Dispatch()
-System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
-
-<color=#ff6b6b>fail:</color> [10:21:04:7654] <color=#B4FF32>[AI]</color> <color=#58D68D><b>HubConnection</b></color> Failed to start connection. Error getting negotiation response from 'https://ai-game.dev/mcp/hub/mcp-server?instance_id=f6a0d60b-758d-426a-8d85-9322fdef78a7&engine=unity&project_name=SofiaUnityProject&project_path_hash=cbbc94cab4dadf985ca37b2dcecbdb8773fde35c90e4a588b17d59ecd04e189a&project_path_hash_legacy=b1108946976e4b42f1ae471490c9bb06d7f2df64e6200829588d5aa24bb165ff&machine_name=DESKTOP-99DFKIK'.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<object> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,object,System.Exception,System.Func`3<object, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@53b82217a9c9/Runtime/Logger/UnityLogger.cs:119)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<object> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<object, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,object&)
-Microsoft.Extensions.Logging.Logger:Log<object> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,object,System.Exception,System.Func`3<object, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger`1<Microsoft.AspNetCore.SignalR.Client.HubConnection>:Microsoft.Extensions.Logging.ILogger.Log<object> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,object,System.Exception,System.Func`3<object, System.Exception, string>)
-com.IvanMurzak.McpPlugin.ForwardLoggerProvider/ForwardingLogger:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>&)
-Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger`1<Microsoft.AspNetCore.Http.Connections.Client.HttpConnection>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>)
-Microsoft.Extensions.Logging.LoggerMessage/<>c__DisplayClass10_0`1<System.Uri>:<Define>g__Log|0 (Microsoft.Extensions.Logging.ILogger,System.Uri,System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.HttpConnection/Log:ErrorWithNegotiation (Microsoft.Extensions.Logging.ILogger,System.Uri,System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.HttpConnection/<NegotiateAsync>d__45:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-System.Net.Http.HttpClient/<SendAsyncWorker>d__47:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Internal.LoggingHttpMessageHandler/<SendAsync>d__2:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Internal.AccessTokenHttpMessageHandler/<SendAsync>d__3:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-System.Net.Http.MonoWebRequestHandler/<SendAsync>d__99:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Threading.Tasks.UnwrapPromise`1<System.Net.WebResponse>:TrySetFromTask (System.Threading.Tasks.Task,bool)
-System.Threading.Tasks.UnwrapPromise`1<System.Net.WebResponse>:InvokeCore (System.Threading.Tasks.Task)
-System.Threading.Tasks.UnwrapPromise`1<System.Net.WebResponse>:Invoke (System.Threading.Tasks.Task)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Threading.Tasks.TaskFactory`1<System.Net.WebResponse>:FromAsyncCoreLogic (System.IAsyncResult,System.Func`2<System.IAsyncResult, System.Net.WebResponse>,System.Action`1<System.IAsyncResult>,System.Threading.Tasks.Task`1<System.Net.WebResponse>,bool)
-System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<System.Net.WebResponse>:<FromAsyncImpl>b__0 (System.IAsyncResult)
-System.Threading.Tasks.TaskToApm/<>c__DisplayClass3_0:<InvokeCallbackWhenTaskCompletes>b__0 ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.HttpWebResponse>:SetException (System.Exception)
-System.Net.HttpWebRequest/<RunWithTimeoutWorker>d__244`1<System.Net.HttpWebResponse>:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
-System.Net.ServicePointScheduler/<WaitAsync>d__46:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>:TrySetResult (System.Threading.Tasks.Task)
-System.Threading.Tasks.TaskFactory/CompleteOnInvokePromise:Invoke (System.Threading.Tasks.Task)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.HttpWebResponse>:SetException (System.Exception)
-System.Net.HttpWebRequest/<MyGetResponseAsync>d__246:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.WebRequestStream>:SetException (System.Exception)
-System.Net.WebCompletionSource`1/<WaitForCompletion>d__15<System.Net.WebRequestStream>:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
-System.Threading.ThreadPoolWorkQueue:Dispatch ()
-System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
-
-<color=#ff6b6b>fail:</color> [10:21:04:7857] <color=#B4FF32>[AI]</color> <color=#58D68D><b>HubConnection</b></color> To stop seeing the error, please <b>Stop</b> the connection to MCP server in <b>AI Game Developer</b> window.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@53b82217a9c9/Runtime/Logger/UnityLogger.cs:119)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
-Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger`1<Microsoft.AspNetCore.SignalR.Client.HubConnection>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
-Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
-Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
-com.IvanMurzak.McpPlugin.ForwardLoggerProvider/ForwardingLogger:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>&)
-Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger`1<Microsoft.AspNetCore.Http.Connections.Client.HttpConnection>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>,System.Exception,System.Func`3<Microsoft.Extensions.Logging.LoggerMessage/LogValues`1<System.Uri>, System.Exception, string>)
-Microsoft.Extensions.Logging.LoggerMessage/<>c__DisplayClass10_0`1<System.Uri>:<Define>g__Log|0 (Microsoft.Extensions.Logging.ILogger,System.Uri,System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.HttpConnection/Log:ErrorWithNegotiation (Microsoft.Extensions.Logging.ILogger,System.Uri,System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.HttpConnection/<NegotiateAsync>d__45:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-System.Net.Http.HttpClient/<SendAsyncWorker>d__47:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Internal.LoggingHttpMessageHandler/<SendAsync>d__2:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-Microsoft.AspNetCore.Http.Connections.Client.Internal.AccessTokenHttpMessageHandler/<SendAsync>d__3:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Http.HttpResponseMessage>:SetException (System.Exception)
-System.Net.Http.MonoWebRequestHandler/<SendAsync>d__99:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Threading.Tasks.UnwrapPromise`1<System.Net.WebResponse>:TrySetFromTask (System.Threading.Tasks.Task,bool)
-System.Threading.Tasks.UnwrapPromise`1<System.Net.WebResponse>:InvokeCore (System.Threading.Tasks.Task)
-System.Threading.Tasks.UnwrapPromise`1<System.Net.WebResponse>:Invoke (System.Threading.Tasks.Task)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Threading.Tasks.TaskFactory`1<System.Net.WebResponse>:FromAsyncCoreLogic (System.IAsyncResult,System.Func`2<System.IAsyncResult, System.Net.WebResponse>,System.Action`1<System.IAsyncResult>,System.Threading.Tasks.Task`1<System.Net.WebResponse>,bool)
-System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<System.Net.WebResponse>:<FromAsyncImpl>b__0 (System.IAsyncResult)
-System.Threading.Tasks.TaskToApm/<>c__DisplayClass3_0:<InvokeCallbackWhenTaskCompletes>b__0 ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.HttpWebResponse>:SetException (System.Exception)
-System.Net.HttpWebRequest/<RunWithTimeoutWorker>d__244`1<System.Net.HttpWebResponse>:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
-System.Net.ServicePointScheduler/<WaitAsync>d__46:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>:TrySetResult (System.Threading.Tasks.Task)
-System.Threading.Tasks.TaskFactory/CompleteOnInvokePromise:Invoke (System.Threading.Tasks.Task)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.HttpWebResponse>:SetException (System.Exception)
-System.Net.HttpWebRequest/<MyGetResponseAsync>d__246:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
-System.Threading.Tasks.Task:FinishContinuations ()
-System.Threading.Tasks.Task:FinishStageThree ()
-System.Threading.Tasks.Task:FinishStageTwo ()
-System.Threading.Tasks.Task:Finish (bool)
-System.Threading.Tasks.Task:TrySetException (object)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.WebRequestStream>:SetException (System.Exception)
-System.Net.WebCompletionSource`1/<WaitForCompletion>d__15<System.Net.WebRequestStream>:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.AwaitTaskContinuation:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
-System.Threading.ThreadPoolWorkQueue:Dispatch ()
-System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+Unloading 51 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4973 unused Assets / (7.1 MB). Loaded Objects now: 5883.
+Memory consumption went from 405.2 MB to 398.1 MB.
+Total: 85.293100 ms (FindLiveObjects: 2.246600 ms CreateObjectMapping: 1.560900 ms MarkObjects: 76.018800 ms  DeleteObjects: 4.959400 ms)
 
 Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
-[Project] Loading completed in 10.293 seconds
-	Project init time: 				9.800 seconds
+[Project] Loading completed in 8.604 seconds
+	Project init time: 				8.137 seconds
 		Template init time: 		0.000 seconds
-		Package Manager init time: 		0.271 seconds
-		Asset Database init time: 		0.634 seconds
-		Global illumination init time: 	0.002 seconds
-		Assemblies load time: 			1.506 seconds
-		Unity extensions init time: 	0.017 seconds
-		Asset Database refresh time: 	6.834 seconds
-	Scene opening time: 			0.315 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1791386464808,"processId":28356,"projectLoad":10.293490499999999,"projectInit":9.800164,"templateInit":0.0,"packageManagerInit":0.2713896,"assetDatabaseInit":0.634321,"globalIlluminationInit":0.0018586,"assembliesLoad":1.5057759,"unityExtensionsInit":0.0167146,"assetDatabaseRefresh":6.8335252,"sceneOpening":0.3149971}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1791386464808,"processId":28356,"editorVersion":"6000.6.4f1 (12bfff696524)","branch":"6000.6/staging","buildType":"Release","platform":"Windows"}
-<color=#ffaa00>warn:</color> [10:21:04:8729] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1539ff40-def3-445d-b219-11fc0b20e25b] AttemptConnection Connection attempt failed for endpoint: /hub/mcp-server. Exception: One or more errors occurred. (An error occurred while sending the request)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-com.IvanMurzak.Unity.MCP.Utils.UnityLogger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>) (at ./Library/PackageCache/com.ivanmurzak.unity.mcp@53b82217a9c9/Runtime/Logger/UnityLogger.cs:125)
-Microsoft.Extensions.Logging.Logger:<Log>g__LoggerLog|14_0<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.ILogger,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>,System.Collections.Generic.List`1<System.Exception>&,Microsoft.Extensions.Logging.FormattedLogValues&)
-Microsoft.Extensions.Logging.Logger:Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
-Microsoft.Extensions.Logging.Logger`1<com.IvanMurzak.McpPlugin.McpManagerClientHub>:Microsoft.Extensions.Logging.ILogger.Log<Microsoft.Extensions.Logging.FormattedLogValues> (Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.FormattedLogValues,System.Exception,System.Func`3<Microsoft.Extensions.Logging.FormattedLogValues, System.Exception, string>)
-Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,string,object[])
-Microsoft.Extensions.Logging.LoggerExtensions:Log (Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,string,object[])
-Microsoft.Extensions.Logging.LoggerExtensions:LogWarning (Microsoft.Extensions.Logging.ILogger,string,object[])
-com.IvanMurzak.McpPlugin.ConnectionManager/<AttemptConnection>d__15:MoveNext ()
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
-System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
-System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
-System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
-UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke ()
-UnityEngine.UnitySynchronizationContext:Exec ()
-UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
-
+		Package Manager init time: 		0.251 seconds
+		Asset Database init time: 		0.631 seconds
+		Global illumination init time: 	0.003 seconds
+		Assemblies load time: 			1.475 seconds
+		Unity extensions init time: 	0.031 seconds
+		Asset Database refresh time: 	5.153 seconds
+	Scene opening time: 			0.332 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1791394675257,"processId":31680,"projectLoad":8.6038589,"projectInit":8.1371053,"templateInit":0.0,"packageManagerInit":0.2513892,"assetDatabaseInit":0.6305341,"globalIlluminationInit":0.0030382,"assembliesLoad":1.4750443,"unityExtensionsInit":0.0308014,"assetDatabaseRefresh":5.1530236,"sceneOpening":0.3323378}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1791394675257,"processId":31680,"editorVersion":"6000.6.4f1 (12bfff696524)","branch":"6000.6/staging","buildType":"Release","platform":"Windows"}
 [Licensing::Client] Successfully resolved entitlement details
 Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:SofiaURP
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -1211,278 +606,8 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 
 (Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 801)
 
-Asset Pipeline Refresh (id=0155747a4058853439da3c1fb736b07c): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=7b5e0f2d2fa0e264b8013149654fa3ac): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 [Licensing::Client] Successfully resolved entitlement details
-DisplayProgressbar: Material Upgrader re-import
-Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:SofiaURP
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:801)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_scriptableRendererData () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:942)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_defaultShader () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.DefaultResources.cs:117)
-UnityEngine.Rendering.GraphicsSettings:GetDefaultShader (UnityEngine.Rendering.DefaultShaderType)
-UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@285af6b8c83f/Editor/Material/AssetReimportUtils.cs:44)
-UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
-UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
-UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 801)
-
-Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:SofiaURP
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:801)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_scriptableRendererData () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:942)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:GetMaterial (UnityEngine.Rendering.Universal.DefaultMaterialType) (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.DefaultResources.cs:25)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_defaultMaterial () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.DefaultResources.cs:54)
-UnityEngine.Rendering.GraphicsSettings:GetDefaultMaterial (UnityEngine.Rendering.DefaultMaterialType)
-UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@285af6b8c83f/Editor/Material/AssetReimportUtils.cs:44)
-UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
-UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
-UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 801)
-
-Importing 'GUID: 31d0dcc6f2dd4e4408d18036a2c93862 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 31d0dcc6f2dd4e4408d18036a2c93862' -> (Import Result ID: '6746f8c24ee6e8acb27800bb6e2d865e') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=46db622b82e0c8ffa233ca3ab08cda16 DependenciesID=4dac53d793d6c18711b387c4e7427f71 StaticDependenciesID=a9b7e349fe155ac7f94c3ff298e893a9 
-Importing 'GUID: 31321ba15b8f8eb4c954353edc038b1d - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 31321ba15b8f8eb4c954353edc038b1d' -> (Import Result ID: 'e41c0801ef671aada3d50ce14fbb89bb') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=aa1baf724b7447f91df0ef6a6f5a6f7c DependenciesID=72522c36d832e2b910101e8439f241c2 StaticDependenciesID=601f0902cf0c0258252eb58110d9c01e 
-Importing 'GUID: 71942363c5608a64bb62421349d39c9c - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Unlit-Default.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 71942363c5608a64bb62421349d39c9c' -> (Import Result ID: 'fd51b1be4ec3b9ff5337ab90973abffb') in 0.010 seconds [static dependencies only]. Details - ImportResultOutputID=0e3e2c35a76408d81da97ba5e3237970 DependenciesID=1b0076d8d2690239243de6f439c3b161 StaticDependenciesID=f5e42310032cd19d255f50600386ffcf 
-Importing 'GUID: 92f845725428c954b878da352f657fe5 - Path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Emissive.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 92f845725428c954b878da352f657fe5' -> (Import Result ID: '51a7dd49dfad78b6c088850c667b0a8a') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=5759d25b8416a6459549b9fa6f3fbfd0 DependenciesID=d9a2499e6e06ae42840506dd31cb1ad7 StaticDependenciesID=c2d3dd9a78204482d78d09d8d2c6972e 
-Importing 'GUID: c2e40fa84d53ccd428f640eac126b1fb - Path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Gold.mat' with importer (NativeFormatImporter)
-Imported 'GUID: c2e40fa84d53ccd428f640eac126b1fb' -> (Import Result ID: '1c5fa34dcbf6eaf7af4533f5e7d824a4') in 0.011 seconds [static dependencies only]. Details - ImportResultOutputID=44da7a1a93f2e684114e9832af56e0d7 DependenciesID=0de1617069634cda154fa5ad9917aea4 StaticDependenciesID=de6e7f0c8ff983fe1bb644bd4b090e5d 
-Importing 'GUID: b34b07a45ba63ce47896c9e674f3a7a7 - Path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Metal_Black.mat' with importer (NativeFormatImporter)
-Imported 'GUID: b34b07a45ba63ce47896c9e674f3a7a7' -> (Import Result ID: '4b516c56187dec4192116aa38ec3a676') in 0.009 seconds [static dependencies only]. Details - ImportResultOutputID=6cf504ebd2c4672ae1b2b38a25e52eb5 DependenciesID=8ecfda1e6d5ac8d9931cf6df335b8f2a StaticDependenciesID=eca969bc9cb4e4c5414cc2b3ce78e3be 
-Importing 'GUID: 9452ae1262a74094f8a68013fbcd1834 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Lit-Default.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 9452ae1262a74094f8a68013fbcd1834' -> (Import Result ID: 'f485bd5844865cad18b52070be2f925c') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=24e5a7b10c939cbb3ec251fadcfd5cde DependenciesID=1794d04a92fc77c2bbc2dce0a1beffa8 StaticDependenciesID=8a48e49b08071d8cf8a32c892cd15a1e 
-Importing 'GUID: 15d0c3709176029428a0da2f8cecf0b5 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 15d0c3709176029428a0da2f8cecf0b5' -> (Import Result ID: '3b5febd3c3bef611a3112f57477fc72f') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=736c0f92b87c2c8c27b29b65a65afd4a DependenciesID=3daabf4bf80b4f3970f933705ce24c85 StaticDependenciesID=ab6bea383adbfbe007d99a5e7c28ff23 
-Importing 'GUID: b51db210fe78df745a372851b3db949e - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingOcclusion.mat' with importer (NativeFormatImporter)
-Imported 'GUID: b51db210fe78df745a372851b3db949e' -> (Import Result ID: 'dc8bfcad19932eff8a72f51a9f77ff92') in 0.015 seconds [static dependencies only]. Details - ImportResultOutputID=a4ae5e2167df49f5638402b78d018f93 DependenciesID=88f42a7838452a80bc0731fa12e27040 StaticDependenciesID=f7313bd28af00d8eccf51afbb84e4cf6 
-Importing 'GUID: 761d8e1f988ed2345a28312145c79c6e - Path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Ground.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 761d8e1f988ed2345a28312145c79c6e' -> (Import Result ID: '9494d5888900eea3e4c5c56c3b67d3f6') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=6edc1ca2c1a3fbe46153651f5488dc03 DependenciesID=a96a3940edd376982ffd564929915474 StaticDependenciesID=0e669f73b40b8979c05d3a1522ba6569 
-Importing 'GUID: b697f6a938056384e968ccf6527dac83 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/RenderAs2D-Flattening.mat' with importer (NativeFormatImporter)
-Imported 'GUID: b697f6a938056384e968ccf6527dac83' -> (Import Result ID: '15dfd95eed33eb0b22746d8922361f36') in 0.014 seconds [static dependencies only]. Details - ImportResultOutputID=e17995076e55d5c358b369c90995d214 DependenciesID=b88b0e93dcf9ab1ffb8d4c5e68bde0c1 StaticDependenciesID=db12d0e990c95af7d0e37860f77d1f14 
-Importing 'GUID: 78a08787ca30045abb69f6f7dd878e09 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/FullscreenInvertColors.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 78a08787ca30045abb69f6f7dd878e09' -> (Import Result ID: 'ff7f9d4f338dadb4a64f424fc6912336') in 0.015 seconds [static dependencies only]. Details - ImportResultOutputID=9664c408082f3e1490ab2fbfd3d1f1f9 DependenciesID=c0451a6d78a6eaaa9d36debab220da82 StaticDependenciesID=a8159b51bbbcd47114da1f54a8aff528 
-Importing 'GUID: 9875a245ac49007498213638a307faa1 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 9875a245ac49007498213638a307faa1' -> (Import Result ID: 'e5d1aa6cde29bc829927cdb7aed90810') in 0.010 seconds [static dependencies only]. Details - ImportResultOutputID=39b7840ade4b7115bdd582f3a214acd8 DependenciesID=e6a3f832a594a05406871eb0296c5199 StaticDependenciesID=482df46b381d29f7793bf0345a783c4b 
-Importing 'GUID: e823cd5b5d27c0f4b8256e7c12ee3e6d - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat' with importer (NativeFormatImporter)
-Imported 'GUID: e823cd5b5d27c0f4b8256e7c12ee3e6d' -> (Import Result ID: '3b8e928f206f5b9fa2c4335d56962464') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=df81e5321bb6222cb13f6995e9380dc0 DependenciesID=c518e814014961d77c731ce6f3c777fc StaticDependenciesID=c5cba8e3dbc2de2429acf2bcbcd7709e 
-Importing 'GUID: 594ea882c5a793440b60ff72d896021e - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/TerrainLit.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 594ea882c5a793440b60ff72d896021e' -> (Import Result ID: '0aaf01c7bd9b0a8b90efbbe9c7609f73') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=bb8cdc491ecab692406b89c9f392665c DependenciesID=5f83de0468dd5ac27bfbdc7f0477fe0d StaticDependenciesID=d4de4778295c0507bcab2ac56b5c9810 
-Importing 'GUID: a97c105638bdf8b4a8650670310a4cd3 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat' with importer (NativeFormatImporter)
-Imported 'GUID: a97c105638bdf8b4a8650670310a4cd3' -> (Import Result ID: 'c93a700b6b8fbef840e2dc20c52376ec') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=9ebf92ab366214cd3659bfbf6202f3c2 DependenciesID=2c63fd459eb4e20693471d16610b4328 StaticDependenciesID=afbcf259c85707392596cc1f889614b5 
-Importing 'GUID: f96821bbefeea864b9b418af4b8615ac - Path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/White.mat' with importer (NativeFormatImporter)
-Imported 'GUID: f96821bbefeea864b9b418af4b8615ac' -> (Import Result ID: '27a5d20f8da262519d80edf6e946feab') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=577244d4b6ae9859e1aa84a1d3e3c9ef DependenciesID=7e5c1c4288a154a6c8af670cff54f2e6 StaticDependenciesID=7d09741f68df37742796da1546f9bc66 
-Importing 'GUID: 6a1143ee683302f4aa628c052723efc1 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SimpleLit.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 6a1143ee683302f4aa628c052723efc1' -> (Import Result ID: '31d4adc51baefda086a4dec9432d4c2d') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=5605f37078cf2b145b2cce0f30228fea DependenciesID=11a07148e34ae8bf95a14816f8cbf611 StaticDependenciesID=f31939137934e59a6d74249a0bfa9d3e 
-Importing 'GUID: 8a239b3da89050c4e89ac06b168fc684 - Path: Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGIRendererFeature/FallbackMaterial.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 8a239b3da89050c4e89ac06b168fc684' -> (Import Result ID: '0ab7e3cde76a00d66a1a5f996f546d1e') in 0.016 seconds [static dependencies only]. Details - ImportResultOutputID=f89e4cd21c809d2c5234dcb4682929df DependenciesID=abe0d62c69ba06e03e909e64c5ccb4cc StaticDependenciesID=2f14fc72eca0b2410ce1d7ba4837f51e 
-Importing 'GUID: 9dfc825aed78fcd4ba02077103263b40 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 9dfc825aed78fcd4ba02077103263b40' -> (Import Result ID: '8729865cd0c4d9220c3e9a838b275d31') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=3537d0b9206bd5b9136d317c71fb92f8 DependenciesID=728fd9123338a08002417d1372cc3ce1 StaticDependenciesID=ea504f5b41993161ddaa9761ff29151b 
-Importing 'GUID: 4f1ef37ae953c484bbc5d5e4049147e5 - Path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Black.mat' with importer (NativeFormatImporter)
-Imported 'GUID: 4f1ef37ae953c484bbc5d5e4049147e5' -> (Import Result ID: '5ccbb4b924536c3b89b45dcf082b3318') in 0.010 seconds [static dependencies only]. Details - ImportResultOutputID=c88b789433395f87730af518e3d4f0e8 DependenciesID=372b3389b7b98d1d3c9d8c3a564d11ee StaticDependenciesID=c099b46c2f28a3cf2d5ebd0e61347899 
-Importing 'GUID: 1062c701058745940ae5dca6219c64c8 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: 1062c701058745940ae5dca6219c64c8' -> (Import Result ID: '3024271bd06f64f79982fd270defa2c6') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6c5f2f8d051a56917d17a2c094feb98a DependenciesID=d07b59934fc53a56e1c9d8bb2feb2651 StaticDependenciesID=e2ee45bc9bda40848d894b5d925d8fb9 
-Importing 'GUID: 30dc370b164eefc43b95744fc796dad0 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: 30dc370b164eefc43b95744fc796dad0' -> (Import Result ID: '5a021e37f4025faa743a998554105a68') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cb41f0a0caebaa2bc709a05c9002939a DependenciesID=53674867c28070d8dc1ac163e84b4e60 StaticDependenciesID=0fd19dd781a863feb1d43c38a03c03b7 
-Importing 'GUID: b2ea3b3f1765e544b9eb5bd1a93a91ce - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: b2ea3b3f1765e544b9eb5bd1a93a91ce' -> (Import Result ID: '81a73a7a80c6957ca4301fe86395509f') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dc101a310053b17728356c69538b3ee7 DependenciesID=3233a759993f6235fe3fc672c0291b21 StaticDependenciesID=6ac72b2ae289ee9d0cc264d84a9b476e 
-Importing 'GUID: a51a3aebb43ac044989270407476b208 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: a51a3aebb43ac044989270407476b208' -> (Import Result ID: '130b46e1c792fe691e9b23bd6b5db5cd') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4b1784ac640f364c05602fbce9d05eeb DependenciesID=e1ad44ed32848ea98a7c58a813d21c9f StaticDependenciesID=6957315c8c97bb873c907db8e06905d2 
-Importing 'GUID: 3750c318f40cab44a97d3a81beaefeb3 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: 3750c318f40cab44a97d3a81beaefeb3' -> (Import Result ID: '667763b164cb954aa24948e92f5c9cd0') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0c2e63df4e1cf94bb38dac6fd01c5ad6 DependenciesID=50194de3bbc4fe4a3f5462e552176b5c StaticDependenciesID=9bb3d539eef24e8b0dd3cbf283efc462 
-Importing 'GUID: c839255fc8f6b4b4d90bf8c1af9f9bd1 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: c839255fc8f6b4b4d90bf8c1af9f9bd1' -> (Import Result ID: 'd04e1042cc7d81dcb4b06242bb10dd86') in 0.037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ee813e456971732412b51605848169d DependenciesID=6d9919c4d0811cd08a64dfe97f8a7a76 StaticDependenciesID=7d0701264bdfa847d1c516a465d5e94b 
-Importing 'GUID: 19a9abb883540be48b75b951a927ae03 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: 19a9abb883540be48b75b951a927ae03' -> (Import Result ID: '0d1c2fd94aaec8bcca7dce7f51515966') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cbd563118f34518f98a0b145d0d17700 DependenciesID=51d0a2e55b5d81785750bb10af8704f0 StaticDependenciesID=120c69c735606fd062d8aabd1d87c7b1 
-Importing 'GUID: d93c1bc57fdf1ac4dad1bf04fac05464 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: d93c1bc57fdf1ac4dad1bf04fac05464' -> (Import Result ID: '533d839aa472f8770b05a12f9181b014') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d4764e9015e234e80959fd33f4a72d38 DependenciesID=e5b271618042a6ab06877945e44165f7 StaticDependenciesID=420044756eb173f6c2b4c23a6fefdeb5 
-Importing 'GUID: f95147a9bab9fe649b8070170fa7ebd2 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: f95147a9bab9fe649b8070170fa7ebd2' -> (Import Result ID: '8f78c0cafd7b197663680e126389d22c') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=da903951388578b1dc441942c735ad72 DependenciesID=19e88c80f8721e9604fd247ee813b79f StaticDependenciesID=ee088453025ff54ae6b73b4b49c3df68 
-Importing 'GUID: 2a29e27936eb547458f646f71125b264 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: 2a29e27936eb547458f646f71125b264' -> (Import Result ID: '066782b23d2049e83b732fdd08c702cf') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fbbee475919708bc162d6a02672a73c8 DependenciesID=5af2509fa44595be61f2d2a46cc91567 StaticDependenciesID=8161905d774a5baf9244ac79bcd2f861 
-Importing 'GUID: 5e63515167650a541b309ba3bfd4db3d - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: 5e63515167650a541b309ba3bfd4db3d' -> (Import Result ID: 'fe66cb4a5fe14ccc9cee7658ee4db443') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=919810d1d0688f436a1ee6290cf2446a DependenciesID=4574abac27ea13303bd424888a35b51c StaticDependenciesID=0be1cea8d712457d76d80cde6276d8f1 
-Importing 'GUID: dfb97a9307a577a41bcacba34b9a7e32 - Path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf' with importer (TrueTypeFontImporter)
-Imported 'GUID: dfb97a9307a577a41bcacba34b9a7e32' -> (Import Result ID: 'db2f1e58c86728dc62c363cd02bda0b5') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=71c1e5eaa968da31a4963ec4d53edb41 DependenciesID=bd9e94171b626fec517039d7151c3821 StaticDependenciesID=d222af8e5c5ca40e47a66fd9819b7ba0 
-Importing 'GUID: 2019d78ad3d1c5c4a8d309a857ca449f - Path: Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Lit Basic.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 2019d78ad3d1c5c4a8d309a857ca449f' -> (Import Result ID: '08a7cb62ccfca11b588cebe63da306aa') in 0.824 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a56b31cef9e1a39efc09906ed95d6e27 DependenciesID=0ec846be8ff08d0a9be86eb881e5e006 StaticDependenciesID=76fdc3816458813a52530f0382844c3d 
-Importing 'GUID: 30fa68ce467463643a86b839ca0eb195 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 30fa68ce467463643a86b839ca0eb195' -> (Import Result ID: '7ad35e5a11cee627d3f89db63d415d02') in 0.203 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=20e1c664f3c24b5db828cd030f94d03d DependenciesID=01ac185a0444e51092f129c75397c3cc StaticDependenciesID=af5b80e704ac285fea28663e21888f22 
-Importing 'GUID: 80aa867ac363ac043847b06ad71604cd - Path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 80aa867ac363ac043847b06ad71604cd' -> (Import Result ID: 'f142c91667a93b44ff18b6ff79b1b3f3') in 0.174 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7a5d887793085fea2095e012fe4b291 DependenciesID=70db32a2908a448655b13f33447b3bab StaticDependenciesID=bac745bd408480f362ca81641423b31e 
-Importing 'GUID: a2407126e3372f64cacb75ed466a5621 - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Lit Basic.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: a2407126e3372f64cacb75ed466a5621' -> (Import Result ID: '5d09454546483ef07cb3698d6f37a99f') in 0.153 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=10f4cd691ed6c18ffffd329bc05c0fbc DependenciesID=37f6b808d4754643dc84bdce27c08715 StaticDependenciesID=536cfd781cd991dd821a78729f222cd9 
-Importing 'GUID: 2476a2d151e824143af40dce1fc93a12 - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/Unlit Simple.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 2476a2d151e824143af40dce1fc93a12' -> (Import Result ID: '3f7cce8c59f26ab816654eba71064923') in 0.132 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1db2201d59e5668eac2a0b48cae228f0 DependenciesID=31c74eda6a3ae19346b6ec7d29da7daf StaticDependenciesID=3fbb087469239fda3cec204b31ed2f51 
-Importing 'GUID: 24a73dccd7b6fad4798be282f96a21f4 - Path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 24a73dccd7b6fad4798be282f96a21f4' -> (Import Result ID: 'c936c1365cc3a8b89f84d75b31bb748a') in 0.125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5eb5837513ea82f03102aa420e182189 DependenciesID=78933ee43d5de4108a8c6caf8598557b StaticDependenciesID=48601dd25c295c599b16c215f2ecbe86 
-Importing 'GUID: 44245ab89240f51459a5077d7145c452 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 44245ab89240f51459a5077d7145c452' -> (Import Result ID: '6548195d0ecdaab5ff4ef8dabef77667') in 0.174 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2423f4dd7a857f2f5a3f8c2157b69d20 DependenciesID=334eab76fcfccc94c8a33bbd51d8144c StaticDependenciesID=42a796c37d22efb8ea0fced7f1244364 
-Importing 'GUID: 25a0ebb4827f3cc47a1af2c79005f65b - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/2D/1_2D Sprite Unlit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 25a0ebb4827f3cc47a1af2c79005f65b' -> (Import Result ID: '179e87914ccb310556ccd5014ab14394') in 0.172 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7d81b5d37beaff106e4994a7c5292724 DependenciesID=559b82eee6aed81279e677788f600517 StaticDependenciesID=c889c3ad91e733374ee6e5c29c47d518 
-Importing 'GUID: 9618d41bb71f74048bb6cace8785b93d - Path: Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Unlit Basic.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 9618d41bb71f74048bb6cace8785b93d' -> (Import Result ID: '77f3f18b297fc432c35ef83e23e1a75d') in 0.286 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=44f6479c485088b66484de5e421943b7 DependenciesID=5ab79065ef98d6013231b2537a1e7584 StaticDependenciesID=f197a877168823dabcbbc06588733feb 
-Importing 'GUID: a680d9a9f8b66514abbfd3ae1c8f77f7 - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/2_Particle Lit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: a680d9a9f8b66514abbfd3ae1c8f77f7' -> (Import Result ID: '52f5bce710c8d79bc9277457a457b3a5') in 0.356 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d49c41b629d869ac8f06cb8862702274 DependenciesID=10b56997094cfc68c78bf7112cb67cc0 StaticDependenciesID=797229ab3c79c3bd21487d5e550156ed 
-Importing 'GUID: 0738648e2f2f84b489a2f0076b69e30a - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/UITKBasicTemplate.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 0738648e2f2f84b489a2f0076b69e30a' -> (Import Result ID: '9d039646dbdaf68b7cd1a032bdc98ef5') in 0.108 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d59f91c9ccdc007e19c93f9d2ed61793 DependenciesID=2330ce79df431bf1a7182b4524f834c3 StaticDependenciesID=f57391f59252c3c660874c1a2e92767a 
-Importing 'GUID: 1716ff8c1e51af14280cc97fbcba3b11 - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/1_Decal Material Volume.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 1716ff8c1e51af14280cc97fbcba3b11' -> (Import Result ID: '6fba051bf7606b644289c24c1d0c19fb') in 0.169 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a44e048b6004199a2030ce4983a03517 DependenciesID=953eb7b0fadef956dd1d52f88b9d04ed StaticDependenciesID=e8d641af8b6dcad8fa8e3485043e713b 
-Importing 'GUID: 3739e562a03fc0b4982d8aa66cc50865 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 3739e562a03fc0b4982d8aa66cc50865' -> (Import Result ID: 'feb4a357609a7008a7d1def1cfa3483c') in 0.148 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c7b7c6e997d76cc2524212208520fb2f DependenciesID=976da1185d39e38e8db353c2813da0ae StaticDependenciesID=0b3166c9b45f71c11d8691c47bb12cca 
-Importing 'GUID: d7288f66e4fb0634c9afef98c31b722a - Path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: d7288f66e4fb0634c9afef98c31b722a' -> (Import Result ID: 'fd608cb7a4c0a45f469fcda951599070') in 0.086 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ff6d88bd83af7840409971181820bc17 DependenciesID=4846665036ba7b50813dd2a4d1ebc594 StaticDependenciesID=7c146aad0b6fcb508fd6e490f8328949 
-Importing 'GUID: 39144937a5efe954dac51acbbe54157e - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Decal Simple.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 39144937a5efe954dac51acbbe54157e' -> (Import Result ID: 'f3a44f9f6e98ea4b394a946e8d173ab6') in 0.115 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=80355ec7d58f63f99ff71aa5b01b59ad DependenciesID=84e94a618868f88e66d39064795025a3 StaticDependenciesID=44b17c0263b17b5a1f1d64bdcd72ffc8 
-Importing 'GUID: 9920c1f1781549a46ba081a2a15a16ec - Path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 9920c1f1781549a46ba081a2a15a16ec' -> (Import Result ID: '1d62b37bc7469f82b4a0ff707aa8504a') in 0.345 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=170f3869262a4e4675bf4d838f5c17df DependenciesID=b5533b8c552315b9b31e19f5cfead1b9 StaticDependenciesID=62e4b8a3eb28c8d12b68e84ed50b4114 
-Importing 'GUID: 1a207e3bee00db44b940e6f362a8e148 - Path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 1a207e3bee00db44b940e6f362a8e148' -> (Import Result ID: 'c482026a8835dff038482c88b0804f21') in 0.165 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a91730ae52732e9a2c2661732f301633 DependenciesID=ae630a2c9fd09ccd76bd956874bb6558 StaticDependenciesID=898d0961f4df79f17f0042f5a23d7d4d 
-Importing 'GUID: 5a4a765e921b8554eb959f7cf697b3be - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/UGUI Canvas Basic.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 5a4a765e921b8554eb959f7cf697b3be' -> (Import Result ID: '03f8a0cb9fe902890cb945d568fb372d') in 0.092 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=921df62e1f946d859ac6eeedd94b84b8 DependenciesID=bec3742415df983b34b5064f48c41b9f StaticDependenciesID=773ed9598de245e2a072eb6b8eba5921 
-Importing 'GUID: 9b4e681081e2b4c469111bb649e2f7ee - Path: Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 9b4e681081e2b4c469111bb649e2f7ee' -> (Import Result ID: 'a70b08d109448061ee1bbc97c34e40ba') in 0.120 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ba86e26724d0965c4a5abef04b82d9a DependenciesID=f70d69a51006fe858fffa197da3d4b5c StaticDependenciesID=aa93bc01171bb25c12a3bd2c6f6c8ee0 
-Importing 'GUID: cbd3e1cc4ae141c42a30e33b4d666a61 - Path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: cbd3e1cc4ae141c42a30e33b4d666a61' -> (Import Result ID: 'be6cf9aafd562d0b9f7545ed49a8c05c') in 0.219 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ee49506de4508889fdada70e2e6a12d DependenciesID=3715bd45d35f3f03071a283062a6f929 StaticDependenciesID=48f70a8ef6aa5af10441ea78677fe262 
-Importing 'GUID: fb6390f650ca44a5ba3246d8dda47927 - Path: Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: fb6390f650ca44a5ba3246d8dda47927' -> (Import Result ID: 'f6bc5c6a672fa7a6fa9cc09f383ec329') in 0.078 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab36576c8371175d5a2fa86b8f993ccd DependenciesID=ef06deaba154892a81e5d3e759345592 StaticDependenciesID=e2ee9604c8c1d6e1a3f463a3843c51ff 
-Importing 'GUID: 5c81372d981403744adbdda4433c9c11 - Path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 5c81372d981403744adbdda4433c9c11' -> (Import Result ID: '99f061e97c01fd48b642efc084bcf221') in 0.139 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c3bca1bd9320105434f154f17413db37 DependenciesID=a75938af93ef50ba9934a763f61bd445 StaticDependenciesID=819bb43a9ae682ab724748d19820eb40 
-Importing 'GUID: bc3def193b270c649b041063a70a1a1f - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/Terrain Standard 4 Layers URP.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_AddPass' not found
-Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_BaseMapGen' not found
-Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_AddPass' not found
-Shader 'Hidden/Terrain/Terrain Standard 4 Layers URP': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Standard 4 Layers URP_BaseMapGen' not found
-Imported 'GUID: bc3def193b270c649b041063a70a1a1f' -> (Import Result ID: 'a95d209d9cc4a235a686bae62520dbf5') in 0.400 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be3d26d2fd8700ab94db27fd9c980ba9 DependenciesID=2b94d420929a42c655ad6836c1b064f2 StaticDependenciesID=fc6a2a58743d287baca2266d12b8d913 
-Importing 'GUID: 9d4e8ca8c5046914c87ca6ccef140dac - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/UGUI Canvas Meter.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 9d4e8ca8c5046914c87ca6ccef140dac' -> (Import Result ID: '0b42d84f674df6bbf611581e76e44660') in 0.083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=089e80e2c20d9ee264664ca74d1ca509 DependenciesID=34ce915a40c6c1d68deaabdcc6c0112c StaticDependenciesID=1cdc862f899e9b1eb857a7901f03c56a 
-Importing 'GUID: bde135b320597544b9ac325092409f8b - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/2D/0_2D Sprite Lit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: bde135b320597544b9ac325092409f8b' -> (Import Result ID: '86bc6748dfc4c08d610dbaaef2f034f1') in 0.192 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c4d0fa352a7eaaba512bb0f4e7dfed1d DependenciesID=50377e9090e2ec6555e9b13de3679f6b StaticDependenciesID=223bd376eb018f92eaf3144128395375 
-Importing 'GUID: 0e9d5a909a1f7e84882a534d0d11e49f - Path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 0e9d5a909a1f7e84882a534d0d11e49f' -> (Import Result ID: 'f1bdb9cd50b341ab368ac3a7e6a6d3bd') in 0.145 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ff87a4d048de45003a9177f961b9a14a DependenciesID=13cd701aa8bcfc6581555251fe65f911 StaticDependenciesID=a2f1398662494d2afe2b1104bb7297fc 
-Importing 'GUID: 3e01bbae25716b24ea9da11102b44902 - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/UITKFullTemplate.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 3e01bbae25716b24ea9da11102b44902' -> (Import Result ID: '14dc50357174b817ed2abd258b037012') in 0.092 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=47d7fae9046bfd3b35775527e5301466 DependenciesID=2de1bf339967a5ad567f2aea226fa675 StaticDependenciesID=787562bcd1feec6d227a8a658ecf76b0 
-Importing 'GUID: 7ef2cf71ad164fe479662ae612dff99e - Path: Packages/com.unity.shadergraph/GraphTemplates/Custom Render Texture.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: 7ef2cf71ad164fe479662ae612dff99e' -> (Import Result ID: 'f5572240fbb290fd0f97b4c914c13156') in 0.053 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd0552a8c2655bd5d70c7ca10b0c0218 DependenciesID=68da5a6d305ba4d0e58d87c2a2c56277 StaticDependenciesID=de3398d04c349b2d55ab40895207d9f4 
-Importing 'GUID: aee84ce0dab81b049bb88017d78a63cd - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/1_Lit Full.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: aee84ce0dab81b049bb88017d78a63cd' -> (Import Result ID: '585d42ff89f32e61fc9e89cdb9ac814f') in 0.235 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bc9c974318eb06978265fda84c6f0500 DependenciesID=d7f9fb20855e9e70645e9de9d02d32c0 StaticDependenciesID=c4a5bbbfe2b62d60f9f3ca43100ca59c 
-Importing 'GUID: def488a52add6574d9f295a507032cb8 - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/Terrain Simple.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Shader 'Hidden/Terrain/Terrain Simple': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_AddPass' not found
-Shader 'Hidden/Terrain/Terrain Simple': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_BaseMapGen' not found
-Shader 'Hidden/Terrain/Terrain Simple': dependency 'AddPassShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_AddPass' not found
-Shader 'Hidden/Terrain/Terrain Simple': dependency 'BaseMapGenShader' shader 'Hidden/Hidden/Terrain/Terrain Simple_BaseMapGen' not found
-Imported 'GUID: def488a52add6574d9f295a507032cb8' -> (Import Result ID: 'efb862b3903ea661a07c7bb8ca0a7c4d') in 0.302 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ce0cb24b1f03b1dc6237829f5438b30 DependenciesID=ce3fee4b4a28932e4f26704eedb434a1 StaticDependenciesID=ad647defe5b24f8479de74338a12b798 
-Importing 'GUID: af66091e0eca0c04a9c3584ae867418a - Path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Particle Unlit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: af66091e0eca0c04a9c3584ae867418a' -> (Import Result ID: '40e6d0eaeca23454826823dcf79c673f') in 0.126 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e7a68eebc7a1b719acec3d113365e7b8 DependenciesID=867753de1076302e52e7251bf1c4223a StaticDependenciesID=71bf97413bc97cb3f7c1638b3bc8ddda 
-Importing 'GUID: bfad0aba0faa90547b68abd10bb6be86 - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/2D/2_2D Sprite Custom Lit.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: bfad0aba0faa90547b68abd10bb6be86' -> (Import Result ID: 'e8121f9029e1635f12aed07963c45cc3') in 0.117 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9fc33d0e769275e629d73e43d0b325ae DependenciesID=0fd812529cce2abb6fc879340c2445b3 StaticDependenciesID=61f6944c46c44ead2ebfc4906ed197fd 
-Importing 'GUID: df41eefe8c13d444ca890dddbbc61f8d - Path: Packages/com.unity.render-pipelines.universal/Editor/ShaderGraph/GraphTemplates/Fullscreen Basic URP.shadergraph' with importer (ScriptedImporter : Unity.ShaderGraph.Editor:UnityEditor.ShaderGraph:ShaderGraphImporter)
-Imported 'GUID: df41eefe8c13d444ca890dddbbc61f8d' -> (Import Result ID: '8abe0b9305b24a13b352db126e545853') in 0.072 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a5b6f2782d013530b234f741b7d1d781 DependenciesID=7b1989e4aeb8e50c71a253ade8ed1747 StaticDependenciesID=4ebf6b92dab8c9c0b807af3b1cddbae8 
-Importing 'GUID: b28fa67a0ff82c5478f27368dc627683 - Path: Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFixture.fbx' with importer (FBXImporter)
-Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:SofiaURP
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:801)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_scriptableRendererData () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:942)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_defaultShader () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.DefaultResources.cs:117)
-UnityEngine.Rendering.GraphicsSettings:GetDefaultShader (UnityEngine.Rendering.DefaultShaderType)
-UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@285af6b8c83f/Editor/Material/AssetReimportUtils.cs:44)
-UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
-UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
-UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 801)
-
-Imported 'GUID: b28fa67a0ff82c5478f27368dc627683' -> (Import Result ID: 'af44eba502283711efa04ca74f866bf2') in 0.045 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=35045d50a88bec301b8f5cbe27ef03f7 DependenciesID=533b041785304e780929660702800768 StaticDependenciesID=b981368b28ef3bf58091dc546987a2cb 
-Importing 'GUID: 1dbf28c1bb322474d981b2dc555e28b0 - Path: Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFloorSpotlight.fbx' with importer (FBXImporter)
-Default Renderer is missing, make sure there is a Renderer assigned as the default on the current Universal RP asset:SofiaURP
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:801)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_scriptableRendererData () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs:942)
-UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:get_defaultShader () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.DefaultResources.cs:117)
-UnityEngine.Rendering.GraphicsSettings:GetDefaultShader (UnityEngine.Rendering.DefaultShaderType)
-UnityEditor.Rendering.AssetReimportUtils:ReimportAll<UnityEngine.Material> (double&,uint&,System.Func`2<string, bool>) (at ./Library/PackageCache/com.unity.render-pipelines.core@285af6b8c83f/Editor/Material/AssetReimportUtils.cs:44)
-UnityEditor.Rendering.Universal.MaterialReimporter:ReimportAllMaterials () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:37)
-UnityEditor.Rendering.Universal.MaterialReimporter/<>c:<RegisterUpgraderReimport>b__2_0 () (at ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Editor/AssetPostProcessors/MaterialPostprocessor.cs:76)
-UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@b0678dfc9e21/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 801)
-
-Imported 'GUID: 1dbf28c1bb322474d981b2dc555e28b0' -> (Import Result ID: '39e6391feec2373403731fa3a48ed1ab') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0ca0e8d146dbf7dabd1d756cf8af531e DependenciesID=35873ea75b90e46852c924feca0b61d8 StaticDependenciesID=86289bc53f109e42814cfa71dde1bc96 
-Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-
-Asset Pipeline Refresh (id=2c937d4bcc104dc4b82d28bef035c657): Total: 7.096 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-	(Values over 0.05ms)
-	Summary:
-		Imports: total=68 (actual=68, local cache=0, cache server=0)
-		Asset DB Process Time: managed=27 ms, native=6848 ms
-		Asset DB Callback time: managed=29 ms, native=189 ms
-		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
-		Project Asset Count: scripts=1217, non-scripts=2105
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
-		Scan Filter Count: 98
-	ApplyChangesToAssetFolders: 0.097ms
-	Scan: 15.223ms
-	Collect global state as custom dependencies: 0.885ms
-	CategorizeScriptCompilationAssets: 0.066ms
-	ProcessAssetsWithTransientArtifactChanges: 0.069ms
-	CategorizeAssets: 1.681ms
-	ImportOutOfDateAssets: 6854.588ms (0.160ms without children)
-		ImportManagerImport: 6852.618ms (122.351ms without children)
-			UpdateCategorizedAssets: 4.645ms
-		UnloadImportedAssets: 1.108ms
-		ReloadImportedAssets: 5.093ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.441ms
-		ImportSchedulerStart: 0.223ms
-	PostProcessAllAssets: 219.095ms
-		ShaderAssetModifiedCallback 183.516ms
-		RaytracingShaderImportPostprocess 0.359ms
-		ComputeShaderImportPostprocess 0.305ms
-		XRBuildSystem.XRAssetImported 0.267ms
-		PostProcessCallbackCreateDeferredMaterials 0.104ms
-		SpeedTreeImporter.PostprocessAllAssets 0.100ms
-		BlockShaderImporter.PostprocessAllAssets 0.059ms
-		MonoPostProcessAllAssets: 29.488ms
-			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 5.236ms
-			AssetPostprocessor.OnPostprocessAllAssets 5.128ms
-			MaterialPostprocessor.OnPostprocessAllAssets 5.065ms
-			SyncVS.PostprocessSyncProject 1.066ms
-			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.745ms
-			PostProcessor.OnPostprocessAllAssets 0.583ms
-			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.407ms
-			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.405ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 0.234ms
-			AssetChangedListener.OnPostprocessAllAssets 0.183ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.130ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.051ms
-	PostAssetChangesProfiler: 0.389ms
-	GatherAllCurrentPrimaryImportResultRevisions: 0.184ms
-	PersistCurrentRevisions: 0.219ms
-	UnloadStreamsEnd: 0.064ms
-	Untracked: 3.012ms
-
 Running tests for ExecutionSettings with details:
 targetPlatform = 
 playerHeartbeatTimeout = 600
@@ -1512,16 +637,13 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 Start Indexing on Editor startup
 [Indexing] Starting Initial Indexing for Assets
 [UnityConnectServicesConfig] config is NOT valid, switching to default
-Request timed out while processing request "https://public-cdn.cloud.unity3d.com/config/production", HTTP error code 0
-.[UnityConnect] Request timed out.
-An error occurred while processing request "https://public-cdn.cloud.unity3d.com/config/production", HTTP error code 299
-.[UnityConnect] An error occurred.
-Created GICache directory at C:/Users/yecos/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.026s, timestamps: [10.297 - 10.323]
+Created GICache directory at C:/Users/yecos/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.019s, timestamps: [8.608 - 8.627]
 [Licensing::Client] Successfully resolved entitlement details
-Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 215 unused Assets / (12.0 MB). Loaded Objects now: 6050.
-Memory consumption went from 487.2 MB to 475.1 MB.
-Total: 112.438100 ms (FindLiveObjects: 0.723600 ms CreateObjectMapping: 0.219500 ms MarkObjects: 107.691100 ms  DeleteObjects: 3.450600 ms)
+Worker ready: AssetImportWorkerHW0 0
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (90.9 KB). Loaded Objects now: 6044.
+Memory consumption went from 404.4 MB to 404.3 MB.
+Total: 83.136800 ms (FindLiveObjects: 0.765800 ms CreateObjectMapping: 0.267500 ms MarkObjects: 81.804500 ms  DeleteObjects: 0.056500 ms)
 
 Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -1556,9 +678,9 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 (Filename: ./Library/PackageCache/com.unity.test-framework@80f691d4262b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (Unknown). Loaded Objects now: 6051.
-Memory consumption went from 476.1 MB to 476.1 MB.
-Total: 102.392200 ms (FindLiveObjects: 0.693100 ms CreateObjectMapping: 0.384400 ms MarkObjects: 100.944900 ms  DeleteObjects: 0.021200 ms)
+Unloading 0 unused Assets / (Unknown). Loaded Objects now: 6045.
+Memory consumption went from 407.4 MB to 407.4 MB.
+Total: 76.112400 ms (FindLiveObjects: 0.464500 ms CreateObjectMapping: 0.149000 ms MarkObjects: 75.250000 ms  DeleteObjects: 0.014400 ms)
 
 DisplayProgressbar: Undo
 Test run completed. Exiting with code 0 (Ok). Run completed.
@@ -1574,7 +696,7 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 
 (Filename: ./Library/PackageCache/com.unity.test-framework@80f691d4262b/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 81)
 
-MonoPathRemapper: Attempts to remap: 34765; Successful remaps: 6834
+MonoPathRemapper: Attempts to remap: 42911; Successful remaps: 15388
 Serialized file version minimum: 23, current 23
 [Physics::Module] Cleanup current backend.
 [Physics::Module] Id: 0xf2b8ea05
@@ -1583,27 +705,27 @@ Input Polling Thread exited.
 Input System module state changed to: Shutdown.
 [Licensing::IpcConnector] LicenseClient-yecos-notifications channel disconnected successfully.
 [Licensing::IpcConnector] LicenseClient-yecos channel disconnected successfully.
+Shut down UDS service system complete
 Lingering sessions upon destruction of worker manager
 Unity Data Store service was successfully shut down
 UDS shutting down local client system
-Shut down UDS service system complete
 AcceleratorClientConnectionCallback - disconnected - :0
 Cleanup mono
 CodeReloadManager destroyed
-<color=#ffaa00>warn:</color> [10:21:27:4446] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
-<color=#ffaa00>warn:</color> [10:21:28:4603] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1539ff40-def3-445d-b219-11fc0b20e25b] DisconnectImmediate Could not acquire gate within timeout. Proceeding without gate protection.
-<color=#ffaa00>warn:</color> [10:21:33:4782] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[1539ff40-def3-445d-b219-11fc0b20e25b] Dispose Could not acquire gate within timeout during Dispose. Proceeding with cleanup anyway.
-abort_threads: Failed aborting id: 000000000000523C, mono_thread_manage will ignore it
+<color=#ffaa00>warn:</color> [12:38:01:2123] <color=#B4FF32>[AI]</color> <color=#85C1E2><b>BufferedFileLogStorage</b></color> Flush called but already disposed, ignored.
+<color=#ffaa00>warn:</color> [12:38:02:2278] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[2917d997-8c6b-4aae-bb4c-654998e021d5] DisconnectImmediate Could not acquire gate within timeout. Proceeding without gate protection.
+<color=#ffaa00>warn:</color> [12:38:07:2407] <color=#B4FF32>[AI]</color> <color=#48C9B0><b>McpManagerClientHub</b></color> ConnectionManager[2917d997-8c6b-4aae-bb4c-654998e021d5] Dispose Could not acquire gate within timeout during Dispose. Proceeding with cleanup anyway.
+abort_threads: Failed aborting id: 0000000000006F0C, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000006268, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000007CC4, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 000000000000523C, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000006F0C, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000006268, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000007CC4, mono_thread_manage will ignore it
 
-debugger-agent: Unable to listen on 3372
+debugger-agent: Unable to listen on 3328
 VBCSCompilerPreWarmer: requested VBCSCompiler shutdown
 Checking for leaked weakptr:
   Found no leaked weakptrs.
 [Package Manager] Server process was shutdown
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1791386493725,"processId":28356,"allocatedMemory":17625917,"memoryLabels":[{"Default":186496},{"Permanent":15516},{"NewDelete":72005},{"Thread":4197944},{"Manager":34141},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":854053},{"Material":132},{"GfxDevice":55968},{"Animation":952},{"Audio":696},{"Font":1701279},{"FreeType":46932},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":17080},{"Input":42840},{"JobScheduler":256},{"TextLib":336},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1402664},{"BaseObject":49360},{"Resource":1444},{"Renderer":2504},{"Transform":4685},{"File":7381},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":927908},{"StaticString":3808},{"Utility":2674806},{"Curl":1712},{"PoolAlloc":2264},{"AI":80},{"TypeTree":17165},{"ScriptManager":12656},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":288},{"WebRequest":552},{"VR":49650},{"SceneManager":608},{"Video":64},{"LazyScriptCache":32},{"Camera":729},{"Secure":2553},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":464},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":128},{"EditorUtility":128372},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4618453},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":40428},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3226},{"Windowing":456},{"TLS":6968},{"Licensing":12572},{"AssetReference":32},{"IPCStream":32}]}
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1791394687417,"processId":31680,"allocatedMemory":15448055,"memoryLabels":[{"Default":186224},{"Permanent":15516},{"NewDelete":70887},{"Thread":4197944},{"Manager":34141},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":850301},{"Material":132},{"GfxDevice":55968},{"Animation":952},{"Audio":696},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":16704},{"Input":42840},{"JobScheduler":256},{"TextLib":336},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1380432},{"BaseObject":49360},{"Resource":1444},{"Renderer":2504},{"Transform":4685},{"File":7381},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":650667},{"StaticString":3808},{"Utility":2674806},{"Curl":2559},{"PoolAlloc":2264},{"AI":80},{"TypeTree":17165},{"ScriptManager":12656},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":288},{"WebRequest":552},{"VR":49650},{"SceneManager":608},{"Video":64},{"LazyScriptCache":32},{"Camera":729},{"Secure":2553},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":464},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":128},{"EditorUtility":126884},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4494389},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":40465},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3226},{"Windowing":456},{"TLS":6968},{"Licensing":12572},{"AssetReference":32},{"IPCStream":32}]}

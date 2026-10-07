@@ -1,8 +1,8 @@
-# SOFIA — Unity 6.3 LTS + MCP + ChatGPT
+# SOFIA — Unity 6.6 + MCP + ChatGPT
 
 ## Decisión
 
-Motor base: **Unity 6.3 LTS**.
+Motor base: **Unity 6.6**.
 
 SOFIA usará MCP para conectar un agente de IA con el Unity Editor y automatizar operaciones técnicas repetitivas, inspección del proyecto, pruebas y construcción de escenas.
 
@@ -17,7 +17,7 @@ MCP client / OpenAI API / Codex
         ↓
 Unity MCP Server
         ↓
-Unity 6.3 LTS Editor
+Unity 6.6 Editor
         ↓
 Scene / Scripts / Tests / Profiler / Screenshots
         ↓

@@ -5,7 +5,7 @@
   "playMode": {
     "passed": 5,
     "failed": 0,
-    "durationSeconds": 166.4558258,
+    "durationSeconds": 166.3224658,
     "tests": [
       "CameraIsStableAtRestAndMovesWithoutReversals",
       "ContinuousWalkingRouteReachesStoryboardBeats",

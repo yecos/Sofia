@@ -11,11 +11,12 @@ La imagen usa arquitectura monumental de piedra con profundidad clara entre ciel
 - Cuatro nuevas pinturas originales para despertar, primeros pasos, encuentro con Hele y continuación. Son assets de juego sin texto de la referencia.
 - Puentes con arcos de piedra, desconchados, musgo e hiedra, más pasarela de piedra lisa donde la lectura de colisión lo pide.
 - Marco de hojas y ramas transparentes ligado a la cámara, por delante del jugador; no tapa el área central de movimiento.
+- Cinco bandas de niebla con deriva y parallax sutil, más cuatro velos de cascada independientes con desplazamiento de agua animado.
 - Encuadres y capturas de los cuatro checkpoints revisados en Game View; los bloques grises grandes y los arcos geométricos quedaron fuera de las composiciones.
-- Se conservaron los colliders y la lógica de movimiento existentes. Las cinco pruebas Play Mode siguieron pasando tras el cambio visual.
+- Se conservaron los colliders y la lógica de movimiento. La prueba Play Mode de capturas y recuperación pasó con las nuevas capas.
 
 ## Brecha restante para alcanzar el nivel final de la lámina
 
-Las nuevas pinturas de arquitectura y niebla son placas completas: su profundidad interior está pintada, pero aún no son capas físicas separadas con parallax independiente. Las cascadas son imagen fija. El follaje delantero sí es una capa propia. El padre usa un perfil estático mientras se crea el PSD/PSB por piezas y el rig; su capa todavía no tiene animación secundaria. Hele mantiene comportamiento jugable, pero requiere un tratamiento final de partículas, brillo y respuesta a la luz. También faltan audio ambiental, mezcla de iluminación por zonas y un pase de dirección artística sobre las uniones entre placas y módulos del puente.
+Las pinturas principales siguen siendo placas completas: la profundidad de cielo y ruinas dentro de cada placa no está separada en capas propias. Las bandas de niebla y los velos de cascada sí son elementos aparte; la niebla deriva suavemente con parallax y el agua tiene un flujo UV sutil. El follaje delantero también es una capa propia. El padre usa un perfil estático mientras se prepara el arte por piezas y el rig; su capa no tiene animación secundaria. Hele mantiene comportamiento jugable, pero necesita un pase final de partículas, brillo y respuesta a la luz. También faltan audio ambiental, mezcla de iluminación por zonas y un ajuste de las uniones entre pinturas y módulos del puente.
 
-La referencia muestra un objetivo de producción, no una afirmación de que el slice actual ya esté finalizado. La siguiente pasada visual debe empezar por separar cielo, ruinas lejanas, niebla, arquitectura media, cascadas y primer plano en assets animables antes de añadir contenido posterior a 1:30.
+La referencia muestra el objetivo de producción; el primer bloque ya tiene arte pintado y movimiento ambiental, pero todavía requiere trabajo de personaje y de capas de fondo para alcanzar el acabado final. El siguiente pase visual debe riggear y animar al padre y separar cielo y arquitectura lejana de las placas antes de añadir contenido posterior a 1:30.

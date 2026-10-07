@@ -80,6 +80,7 @@ namespace Sofia.VS01.Editor
             var camera = cameraObject.AddComponent<Camera>(); camera.orthographic = true; camera.orthographicSize = 6.5f;
             camera.backgroundColor = new Color(.69f, .74f, .77f); camera.clearFlags = CameraClearFlags.SolidColor;
             ForegroundFrame(cameraObject.transform);
+            Atmosphere(cameraObject.transform);
             cameraObject.AddComponent<AudioListener>();
             var brain = cameraObject.AddComponent<CinemachineBrain>(); brain.UpdateMethod = CinemachineBrain.UpdateMethods.LateUpdate;
             var rig = new GameObject("CM_VS01").AddComponent<CinemachineCamera>(); rig.transform.position = new Vector3(0, 2, -30);
@@ -115,12 +116,12 @@ namespace Sofia.VS01.Editor
                 importer.textureType = TextureImporterType.Default; importer.alphaIsTransparency = true;
                 importer.mipmapEnabled = false; importer.maxTextureSize = 2048; importer.SaveAndReimport();
             }
-            foreach (string name in new[] { "SPR_Father", "SPR_Father_Profile", "SPR_Hele", "SPR_StoneWalkway", "SPR_IvyBridge", "SPR_ForegroundIvy" })
+            foreach (string name in new[] { "SPR_Father", "SPR_Father_Profile", "SPR_Hele", "SPR_StoneWalkway", "SPR_IvyBridge", "SPR_ForegroundIvy", "SPR_DriftingMist", "SPR_Waterfall" })
             {
                 string path = AssetsRoot + "/Art/" + name + ".png";
                 var importer = AssetImporter.GetAtPath(path) as TextureImporter;
                 if (importer == null) throw new FileNotFoundException("Missing painted VS01 sprite", path);
-                float ppu = name == "SPR_Father_Profile" ? 650 : name == "SPR_Father" ? 768 : name == "SPR_StoneWalkway" ? 198.3f : name == "SPR_IvyBridge" ? 120 : name == "SPR_ForegroundIvy" ? 100 : 1600;
+                float ppu = name == "SPR_Father_Profile" ? 650 : name == "SPR_Father" ? 768 : name == "SPR_StoneWalkway" ? 198.3f : name == "SPR_IvyBridge" ? 120 : name == "SPR_ForegroundIvy" ? 100 : name == "SPR_DriftingMist" ? 100 : name == "SPR_Waterfall" ? 200 : 1600;
                 if (importer.textureType == TextureImporterType.Sprite && Mathf.Approximately(importer.spritePixelsPerUnit, ppu)) continue;
                 importer.textureType = TextureImporterType.Sprite; importer.spriteImportMode = SpriteImportMode.Single;
                 importer.spritePixelsPerUnit = ppu; importer.spritePivot = name == "SPR_Father_Profile" ? new Vector2(.5f, .02f) : name == "SPR_Father" ? new Vector2(.5f, .04f) : new Vector2(.5f, .5f);
@@ -148,6 +149,39 @@ namespace Sofia.VS01.Editor
             renderer.sprite = sprite;
             renderer.sortingOrder = 100;
             renderer.color = new Color(1, 1, 1, .65f);
+        }
+        static void Atmosphere(Transform camera)
+        {
+            var mist = AssetDatabase.LoadAssetAtPath<Sprite>(AssetsRoot + "/Art/SPR_DriftingMist.png");
+            var waterfall = AssetDatabase.LoadAssetAtPath<Sprite>(AssetsRoot + "/Art/SPR_Waterfall.png");
+            string flowPath = AssetsRoot + "/Materials/FlowWater.mat";
+            var flow = AssetDatabase.LoadAssetAtPath<Material>(flowPath);
+            if (!flow) { flow = new Material(Shader.Find("SOFIA/FlowWater")); AssetDatabase.CreateAsset(flow, flowPath); }
+            flow.shader = Shader.Find("SOFIA/FlowWater"); flow.SetColor("_Color", Color.white); EditorUtility.SetDirty(flow);
+            float[] bands = { 0, 45, 90, 135, 180 };
+            for (int i = 0; i < bands.Length; i++)
+            {
+                var layer = new GameObject("Mid_MistBand_" + i).AddComponent<SpriteRenderer>();
+                layer.transform.SetParent(environment, false);
+                layer.sprite = mist; layer.sortingOrder = 1;
+                layer.color = new Color(.88f, .94f, 1f, .16f);
+                layer.transform.localScale = new Vector3(36f / (mist.rect.width / mist.pixelsPerUnit), 4.7f / (mist.rect.height / mist.pixelsPerUnit), 1);
+                var motion = layer.gameObject.AddComponent<VS01AtmosphericMotion>();
+                motion.CameraTarget = camera; motion.Origin = new Vector3(bands[i], -2.8f, 7);
+                motion.Parallax = .14f; motion.DriftAmplitude = .55f; motion.DriftRate = .16f; motion.VerticalAmplitude = .12f; motion.Phase = i * 1.4f;
+            }
+            float[] falls = { -1, 46, 122, 166 };
+            for (int i = 0; i < falls.Length; i++)
+            {
+                var layer = new GameObject("Mid_FlowingWater_" + i).AddComponent<SpriteRenderer>();
+                layer.transform.SetParent(environment, false);
+                layer.sprite = waterfall; layer.sortingOrder = 0; layer.sharedMaterial = flow;
+                layer.color = new Color(.83f, .94f, 1f, .25f);
+                layer.transform.localScale = new Vector3(3.4f / (waterfall.rect.width / waterfall.pixelsPerUnit), 11f / (waterfall.rect.height / waterfall.pixelsPerUnit), 1);
+                var motion = layer.gameObject.AddComponent<VS01AtmosphericMotion>();
+                motion.CameraTarget = camera; motion.Origin = new Vector3(falls[i], -.8f, 9);
+                motion.Parallax = .015f; motion.DriftAmplitude = .035f; motion.DriftRate = 1.8f; motion.VerticalAmplitude = .02f; motion.Phase = i * 1.2f;
+            }
         }
         static void SaveAsset(Object obj, string path)
         { if (!AssetDatabase.LoadAssetAtPath<Object>(path)) AssetDatabase.CreateAsset(obj, path); else Object.DestroyImmediate(obj); }

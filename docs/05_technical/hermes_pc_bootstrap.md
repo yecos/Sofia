@@ -4,7 +4,7 @@
 
 Dejar un PC Windows listo para comenzar el desarrollo real de SOFIA con:
 
-- Unity 6.3 LTS fijado a 6000.3.25f1.
+- Unity 6.6 fijado a 6000.6.4f1.
 - Proyecto Unity dentro del repo.
 - Unity MCP de IvanMurzak instalado y operativo.
 - Herramientas MCP para Animation, Cinemachine, Input System, Particle System, ProBuilder, Splines, Tilemap y Timeline.
@@ -53,7 +53,7 @@ No almacenar contraseñas ni tokens en el repo.
 - GitHub CLI
 - Node.js LTS
 - Unity Hub
-- Unity 6.3 LTS 6000.3.25f1
+- Unity 6.6 6000.6.4f1
 - Visual Studio Code
 - Python 3.13
 - FFmpeg
@@ -172,18 +172,18 @@ npm install -g unity-mcp-cli
 unity-mcp-cli --version
 ```
 
-## 8. Unity 6.3 LTS
+## 8. Unity 6.6
 
 Versión fijada:
 
 ```
-6000.3.25f1
+6000.6.4f1
 ```
 
 Instalar:
 
 ```powershell
-unity-mcp-cli install-unity 6000.3.25f1
+unity-mcp-cli install-unity 6000.6.4f1
 ```
 
 Si Unity Hub requiere sesión/licencia, completar esa autenticación y continuar.
@@ -199,7 +199,7 @@ C:\Dev\Sofia\game\SofiaUnityProject
 Si no existe `Packages\manifest.json`:
 
 ```powershell
-unity-mcp-cli create-project C:\Dev\Sofia\game\SofiaUnityProject --unity 6000.3.25f1
+unity-mcp-cli create-project C:\Dev\Sofia\game\SofiaUnityProject --unity 6000.6.4f1
 ```
 
 No recrear el proyecto si ya existe.
@@ -244,7 +244,7 @@ Completar autorización una vez y continuar.
 ## 12. Abrir Unity y esperar MCP
 
 ```powershell
-unity-mcp-cli open C:\Dev\Sofia\game\SofiaUnityProject --unity 6000.3.25f1
+unity-mcp-cli open C:\Dev\Sofia\game\SofiaUnityProject --unity 6000.6.4f1
 unity-mcp-cli wait-for-ready C:\Dev\Sofia\game\SofiaUnityProject
 unity-mcp-cli status C:\Dev\Sofia\game\SofiaUnityProject
 ```
@@ -253,7 +253,7 @@ Unity-MCP descarga/arranca automáticamente su servidor local.
 
 ## 13. Paquetes Unity requeridos por SOFIA
 
-Usar Package Manager/MCP y dejar resueltas las versiones compatibles con 6000.3.25f1.
+Usar Package Manager/MCP y dejar resueltas las versiones compatibles con 6000.6.4f1.
 
 Paquetes objetivo:
 
@@ -268,7 +268,7 @@ Paquetes objetivo:
 - Test Framework
 - Shader Graph / URP dependencies
 
-No fijar versiones arbitrarias si Unity ofrece versiones verified/compatible para 6000.3.
+No fijar versiones arbitrarias si Unity ofrece versiones verified/compatible para 6000.6.
 
 ## 14. Configuración del proyecto
 
@@ -548,7 +548,7 @@ No fusionar a main todavía.
 
 Hermes solo puede reportar `SOFIA_PC_READY = TRUE` si cumple todos:
 
-- Unity 6000.3.25f1 instalado.
+- Unity 6000.6.4f1 instalado.
 - Repo clonado.
 - Proyecto abre.
 - MCP conectado.
@@ -603,6 +603,6 @@ Hermes NO debe:
 - instalar dos Unity MCP distintos;
 - meter secretos al repo;
 - meter Library o builds;
-- cambiar de Unity 6.3 LTS a 6000.6 sin decisión documentada;
+- cambiar de Unity 6.6 a 6000.6 sin decisión documentada;
 - instalar Spine/Toon Boom de pago sin aprobación;
 - generar assets finales en masa antes de VS01.

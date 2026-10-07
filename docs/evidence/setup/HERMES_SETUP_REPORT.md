@@ -155,3 +155,6 @@ Nota MCP: `screenshot-game-view` fue invocado y devolvió `Game View render text
 `SOFIA_PC_READY = FALSE`
 
 No se marca READY porque no se cumplen simultáneamente todos los criterios solicitados.
+
+## VS01 — 2026-10-07
+Rama feature/vs01-despertar-90s desde setup/unity-bootstrap. Escena Despertar jugable, 4 pruebas PlayMode y 2 EditMode PASS, cuatro capturas reales y medición de cámara a 60 FPS. Se corrigió el renderer URP vacío del bootstrap. Detalles y limitaciones en ../../07_vertical_slice/vs01_implementation_0_90.md. No se avanza a 2:00+; duración narrativa y feel humano pendientes de revisión.

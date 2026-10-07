@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sofia/Scenes/Dev/SCN_MCP_SmokeTest.unity
     guid: 89e38b7ad2700dc44975d295eb36e83e
+  - enabled: 1
+    path: Assets/Sofia/Scenes/VerticalSlice/SCN_VS01_Despertar.unity
+    guid: a526afd561452604ca0ee0727cc66c97
   m_configObjects: {}

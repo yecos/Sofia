@@ -1,1 +1,1 @@
-{"name":"Sofia.VS01","references":["Unity.InputSystem","Unity.Cinemachine"],"autoReferenced":true}
+{"name":"Sofia.VS01","references":["Unity.InputSystem","Unity.Cinemachine","Unity.2D.Animation.Runtime","Unity.2D.IK.Runtime"],"autoReferenced":true}

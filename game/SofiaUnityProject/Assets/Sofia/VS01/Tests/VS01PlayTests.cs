@@ -4,6 +4,8 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEngine.U2D.Animation;
+using UnityEngine.U2D.IK;
 namespace Sofia.VS01.Tests
 {
     public sealed class VS01PlayTests
@@ -12,6 +14,53 @@ namespace Sofia.VS01.Tests
         IEnumerator Load()
         { SceneManager.LoadScene("SCN_VS01_Despertar"); yield return null; }
         static VS01Director Director => Object.FindAnyObjectByType<VS01Director>();
+        [UnityTest]
+        public IEnumerator FatherVisualUsesSpriteSkinAnimatorAndReachIk()
+        {
+            yield return Load();
+            var d = Director; var p = d.Father;
+            var animator = p.GetComponentInChildren<Animator>();
+            var driver = p.GetComponent<FatherAnimationDriver>();
+            var skins = p.GetComponentsInChildren<SpriteSkin>(true);
+            var manager = p.GetComponentInChildren<IKManager2D>();
+            var solver = p.GetComponentInChildren<LimbSolver2D>();
+
+            Assert.That(animator, Is.Not.Null);
+            Assert.That(animator.runtimeAnimatorController, Is.Not.Null);
+            Assert.That(animator.applyRootMotion, Is.False);
+            Assert.That(driver, Is.Not.Null);
+            Assert.That(skins.Length, Is.EqualTo(1), "The authored full-body pose should render as one intact SpriteSkin.");
+            foreach (var skin in skins)
+            {
+                var renderer = skin.GetComponent<SpriteRenderer>();
+                Assert.That(renderer, Is.Not.Null);
+                Assert.That(renderer.sprite, Is.Not.Null);
+                Assert.That(skin.rootBone, Is.Not.Null);
+                Assert.That(skin.boneTransforms.Length, Is.EqualTo(22));
+                Assert.That(skin.boneTransforms[0], Is.SameAs(skin.rootBone));
+                Assert.That(skin.SetBoneTransforms(skin.boneTransforms), Is.EqualTo(SpriteSkinState.Ready),
+                    "The installed 2D Animation package must report a valid, weighted SpriteSkin.");
+            }
+            Assert.That(manager, Is.Not.Null);
+            Assert.That(solver, Is.Not.Null);
+            Assert.That(solver.GetChain(0).isValid, Is.True);
+
+            driver.RequestReach(driver.ReachTarget, .4f);
+            Assert.That(manager.weight, Is.EqualTo(.4f).Within(.001f));
+            driver.ReleaseReach();
+            Assert.That(manager.weight, Is.EqualTo(0f).Within(.001f));
+
+            p.ExternalInput = true;
+            yield return new WaitForSeconds(3f);
+            p.Axis = 1f; p.Running = false;
+            for (int i = 0; i < 12; i++) yield return new WaitForFixedUpdate();
+            yield return null;
+            Assert.That(p.Body.linearVelocity.x, Is.GreaterThan(.1f));
+            Assert.That(animator.GetFloat("Speed"), Is.GreaterThan(.1f));
+            Assert.That(p.transform.position.x, Is.GreaterThan(0f));
+            p.Axis = 0f;
+            LogAssert.NoUnexpectedReceived();
+        }
         static IEnumerator Capture(string name)
         { Directory.CreateDirectory(Evidence); yield return new WaitForEndOfFrame(); ScreenCapture.CaptureScreenshot(Path.Combine(Evidence, name + ".png")); yield return new WaitForSeconds(.3f); }
         [UnityTest]

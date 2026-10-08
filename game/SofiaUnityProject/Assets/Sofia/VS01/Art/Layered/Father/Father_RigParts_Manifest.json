@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 1,
+  "source": "game\\SofiaUnityProject\\Assets\\Sofia\\VS01\\Art\\Layered\\Father\\Father_RigParts_Atlas_v01.png",
+  "sourceSize": {
+    "width": 1122,
+    "height": 1402
+  },
+  "partsCount": 20,
+  "transparencyCleanup": {
+    "method": "Highly saturated red/yellow fringe removed within 12px of alpha<=8 silhouette; alpha<=2 cleared; 2px RGB-only edge dilation on isolated parts.",
+    "removedPixels": 14092,
+    "componentThresholdAlpha": 8
+  },
+  "layeredMaster": "game\\SofiaUnityProject\\Assets\\Sofia\\VS01\\Art\\Layered\\Father\\Father_RigParts_Layers.ora",
+  "cleanAtlas": "game\\SofiaUnityProject\\Assets\\Sofia\\VS01\\Art\\Layered\\Father\\Father_RigParts_Atlas_Clean.png",
+  "contactSheet": "game\\SofiaUnityProject\\Assets\\Sofia\\VS01\\Art\\Layered\\Father\\Father_RigParts_ContactSheet.png",
+  "rigNotes": [
+    "Parts are independent painted cutouts in a consistent side-view style.",
+    "The .ora master preserves the atlas arrangement for editing; the PNG cutouts are the Unity inputs.",
+    "Pivots are anatomical starting points and require visual tuning in the assembled neutral pose.",
+    "This source does not yet add hidden overlap extensions or alternate facial-expression layers."
+  ],
+  "parts": [
+    {
+      "name": "Head_Profile",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Head_Profile.png",
+      "atlasRect": {
+        "x": 22,
+        "y": 0,
+        "width": 292,
+        "height": 261
+      },
+      "contentBounds": {
+        "x": 36,
+        "y": 13,
+        "width": 264,
+        "height": 234
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 0,
+        "column": 0
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.74,
+        "y": 0.12
+      },
+      "initialSortingOrder": 20,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 41881,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Hair_Back",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Hair_Back.png",
+      "atlasRect": {
+        "x": 306,
+        "y": 2,
+        "width": 246,
+        "height": 271
+      },
+      "contentBounds": {
+        "x": 320,
+        "y": 16,
+        "width": 218,
+        "height": 243
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 0,
+        "column": 1
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.12
+      },
+      "initialSortingOrder": 19,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 40506,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Hair_Front",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Hair_Front.png",
+      "atlasRect": {
+        "x": 550,
+        "y": 3,
+        "width": 277,
+        "height": 257
+      },
+      "contentBounds": {
+        "x": 564,
+        "y": 17,
+        "width": 249,
+        "height": 229
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 0,
+        "column": 2
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.78,
+        "y": 0.16
+      },
+      "initialSortingOrder": 18,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 30815,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Scarf_Collar",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Scarf_Collar.png",
+      "atlasRect": {
+        "x": 823,
+        "y": 18,
+        "width": 296,
+        "height": 272
+      },
+      "contentBounds": {
+        "x": 837,
+        "y": 32,
+        "width": 268,
+        "height": 244
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 0,
+        "column": 3
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.5,
+        "y": 0.2
+      },
+      "initialSortingOrder": 17,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 44941,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Torso_Robe",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Torso_Robe.png",
+      "atlasRect": {
+        "x": 8,
+        "y": 246,
+        "width": 323,
+        "height": 322
+      },
+      "contentBounds": {
+        "x": 22,
+        "y": 260,
+        "width": 295,
+        "height": 294
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 1,
+        "column": 0
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.5,
+        "y": 0.12
+      },
+      "initialSortingOrder": 16,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 60590,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Pelvis_Belt_Robe",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Pelvis_Belt_Robe.png",
+      "atlasRect": {
+        "x": 333,
+        "y": 255,
+        "width": 247,
+        "height": 328
+      },
+      "contentBounds": {
+        "x": 347,
+        "y": 269,
+        "width": 219,
+        "height": 300
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 1,
+        "column": 1
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.52,
+        "y": 0.86
+      },
+      "initialSortingOrder": 15,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 45214,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Arm_Near_Upper",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Arm_Near_Upper.png",
+      "atlasRect": {
+        "x": 613,
+        "y": 266,
+        "width": 174,
+        "height": 287
+      },
+      "contentBounds": {
+        "x": 627,
+        "y": 280,
+        "width": 146,
+        "height": 259
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 1,
+        "column": 2
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.8,
+        "y": 0.84
+      },
+      "initialSortingOrder": 14,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 26123,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Arm_Near_Forearm_Hand",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Arm_Near_Forearm_Hand.png",
+      "atlasRect": {
+        "x": 887,
+        "y": 261,
+        "width": 217,
+        "height": 281
+      },
+      "contentBounds": {
+        "x": 901,
+        "y": 275,
+        "width": 189,
+        "height": 253
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 1,
+        "column": 3
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.86,
+        "y": 0.86
+      },
+      "initialSortingOrder": 13,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 22079,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Arm_Far_Upper",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Arm_Far_Upper.png",
+      "atlasRect": {
+        "x": 56,
+        "y": 550,
+        "width": 202,
+        "height": 281
+      },
+      "contentBounds": {
+        "x": 70,
+        "y": 564,
+        "width": 174,
+        "height": 253
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 2,
+        "column": 0
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.86
+      },
+      "initialSortingOrder": 12,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 26982,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Arm_Far_Forearm_Hand",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Arm_Far_Forearm_Hand.png",
+      "atlasRect": {
+        "x": 328,
+        "y": 547,
+        "width": 200,
+        "height": 260
+      },
+      "contentBounds": {
+        "x": 342,
+        "y": 561,
+        "width": 172,
+        "height": 232
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 2,
+        "column": 1
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.86,
+        "y": 0.87
+      },
+      "initialSortingOrder": 11,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 19816,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Leg_Near_Pants",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Leg_Near_Pants.png",
+      "atlasRect": {
+        "x": 583,
+        "y": 529,
+        "width": 237,
+        "height": 280
+      },
+      "contentBounds": {
+        "x": 597,
+        "y": 543,
+        "width": 209,
+        "height": 252
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 2,
+        "column": 2
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.76,
+        "y": 0.9
+      },
+      "initialSortingOrder": 10,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 33623,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Leg_Near_Boot",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Leg_Near_Boot.png",
+      "atlasRect": {
+        "x": 903,
+        "y": 531,
+        "width": 219,
+        "height": 274
+      },
+      "contentBounds": {
+        "x": 917,
+        "y": 545,
+        "width": 193,
+        "height": 246
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 2,
+        "column": 3
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.48,
+        "y": 0.84
+      },
+      "initialSortingOrder": 9,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 28867,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Leg_Far_Pants",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Leg_Far_Pants.png",
+      "atlasRect": {
+        "x": 25,
+        "y": 789,
+        "width": 245,
+        "height": 281
+      },
+      "contentBounds": {
+        "x": 39,
+        "y": 803,
+        "width": 217,
+        "height": 253
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 3,
+        "column": 0
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.76,
+        "y": 0.9
+      },
+      "initialSortingOrder": 8,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 35552,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Leg_Far_Boot",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Leg_Far_Boot.png",
+      "atlasRect": {
+        "x": 332,
+        "y": 794,
+        "width": 230,
+        "height": 267
+      },
+      "contentBounds": {
+        "x": 346,
+        "y": 808,
+        "width": 202,
+        "height": 239
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 3,
+        "column": 1
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.48,
+        "y": 0.84
+      },
+      "initialSortingOrder": 7,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 28808,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Cape_Back_Upper",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Cape_Back_Upper.png",
+      "atlasRect": {
+        "x": 555,
+        "y": 788,
+        "width": 298,
+        "height": 309
+      },
+      "contentBounds": {
+        "x": 569,
+        "y": 802,
+        "width": 270,
+        "height": 281
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 3,
+        "column": 2
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.88
+      },
+      "initialSortingOrder": 6,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 57326,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Cape_Mid_Upper",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Cape_Mid_Upper.png",
+      "atlasRect": {
+        "x": 844,
+        "y": 790,
+        "width": 260,
+        "height": 311
+      },
+      "contentBounds": {
+        "x": 858,
+        "y": 804,
+        "width": 232,
+        "height": 283
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 3,
+        "column": 3
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.88
+      },
+      "initialSortingOrder": 5,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 43282,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Cape_Back_Lower",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Cape_Back_Lower.png",
+      "atlasRect": {
+        "x": 3,
+        "y": 1052,
+        "width": 255,
+        "height": 340
+      },
+      "contentBounds": {
+        "x": 17,
+        "y": 1066,
+        "width": 227,
+        "height": 312
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 4,
+        "column": 0
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.88
+      },
+      "initialSortingOrder": 4,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 40968,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Cape_Mid_Lower",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Cape_Mid_Lower.png",
+      "atlasRect": {
+        "x": 282,
+        "y": 1046,
+        "width": 258,
+        "height": 356
+      },
+      "contentBounds": {
+        "x": 296,
+        "y": 1060,
+        "width": 230,
+        "height": 332
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 4,
+        "column": 1
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.88
+      },
+      "initialSortingOrder": 3,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 45377,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Cape_Front_Upper",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Cape_Front_Upper.png",
+      "atlasRect": {
+        "x": 550,
+        "y": 1057,
+        "width": 263,
+        "height": 342
+      },
+      "contentBounds": {
+        "x": 564,
+        "y": 1071,
+        "width": 235,
+        "height": 314
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 4,
+        "column": 2
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.88
+      },
+      "initialSortingOrder": 2,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 44384,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    },
+    {
+      "name": "Cape_Front_Lower",
+      "unitySprite": "Assets/Sofia/VS01/Art/Layered/Father/Parts/SPR_Father_Cape_Front_Lower.png",
+      "atlasRect": {
+        "x": 900,
+        "y": 1061,
+        "width": 222,
+        "height": 334
+      },
+      "contentBounds": {
+        "x": 914,
+        "y": 1075,
+        "width": 195,
+        "height": 306
+      },
+      "trimPadding": 14,
+      "atlasCell": {
+        "row": 4,
+        "column": 3
+      },
+      "pivotNormalizedBottomLeft": {
+        "x": 0.82,
+        "y": 0.88
+      },
+      "initialSortingOrder": 1,
+      "pixelsPerUnit": 260,
+      "areaAtAlpha8": 33122,
+      "notes": "Pivot is a first-pass anatomical anchor; adjust against the assembled neutral pose in Unity."
+    }
+  ]
+}

@@ -26,9 +26,20 @@ The lab captures are saved under `docs/evidence/vs01/animationlab/`:
 | Look at Hele | `father_look_hele.png` |
 | Turn | `father_turn.png` |
 
-## Source-art boundary
+## Layered cutout source v01
 
-The repository has no layered `Father_MASTER.psd` or `.psb`. PSD Importer is installed, but a flattened full-body painting does not contain independent arm, leg, torso, hair, or cape layers for the importer to recover. This rig therefore combines the painted key poses with controlled mesh deformation; it is a useful first pass, not a final separated-layer rig. When the layered master is ready, import it with PSD Importer and transfer the tested state machine, IK setup, timing, and cape curves onto those layers.
+A first independently editable cutout kit now lives in `Assets/Sofia/VS01/Art/Layered/Father/`:
+
+- `Father_RigParts_Layers.ora`: editable OpenRaster master with one isolated layer per component, preserving the contact-sheet layout.
+- `Parts/SPR_Father_*.png`: 20 transparent cutouts for Unity, split into head/hair, collar, torso, pelvis, near/far arm segments, near/far trouser and boot pieces, and six cape panels.
+- `Father_RigParts_ContactSheet.png`: transparent checkerboard review sheet.
+- `Father_RigParts_Manifest.json`: source rectangles, provisional pivots, PPU and notes.
+- `tools/Art/build_father_layered_assets.py`: reproducible extraction, fringe cleanup, OpenRaster packing and contact-sheet generation.
+- `Assets/Sofia/VS01/Editor/FatherLayeredArtImporter.cs`: imports the cutouts as single-sprite assets at 520 PPU with per-piece custom pivots, alpha transparency and uncompressed texture data.
+
+The source atlas `Father_RigParts_Atlas_v01.png` is preserved unchanged. The clean atlas and per-part PNGs are derived copies. The file `Father_RigParts_Layers.ora` opens as layers in OpenRaster-compatible paint software; it is not a PSD/PSB.
+
+This is a cutout source kit, not yet a finished assembled puppet. Several generated pieces overlap by design (for example, hair over the head, collar over torso, and cape panels behind/in front of the body), and the pivots still need tuning against a neutral assembled pose. I have kept the tested `PF_Father` prefab and its animation state machine intact rather than replacing it with an unreviewed assembly. The next rig pass should assemble a neutral side view in a separate prefab, tune overlaps and pivots in Unity, then transfer the existing locomotion, reach IK and cape timing after visual review.
 
 ## Rebuild and verification
 
